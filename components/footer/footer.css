@@ -1,11 +1,10 @@
-.page__footer {
-    max-width: 640px;
-    height: 384px;
+.footer {
+    min-height: 384px;
     padding: 0 252px;
     display: flex;
     flex-direction: column;
 }
-.page__subtitle {
+.footer__subtitle {
     margin: 71px 0 32px;
     font-family: 'Inter';
     text-align: center;
@@ -14,7 +13,8 @@
     font-weight: 500;
     line-height: 48px;
 }
-.page__text {
+.footer__text {
+    max-width: 640px;
     font-family: 'Inter';
     text-align: center;
     color: #212429;
