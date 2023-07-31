@@ -1,11 +1,8 @@
 /* Стилизация кнопки */
-/* Обнуление */
-button{border: none;}
 
 .button {
-    width: 189px;
     height: 48px;
-    text-align: center;
+    padding: 0 65.5px;
     border-radius: 8px;
     color: var(--white);
     font-family: 'Roboto';
@@ -14,32 +11,34 @@ button{border: none;}
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    transition: background-color 200ms ease-out;
+}
+.button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 .button_primary{
     background-color: var(--primary);
-    transition: background-color 200ms ease-out;
+    
 }
 .button_primary:hover{
     background-color: #2342C0;
+    
 }
 .button_primary:disabled{
     background: var(--primary);
-    opacity: 0.5;
-    cursor: default;
 }
 
 .button_secondary{
     background-color: var(--secondary);
-    transition: background-color 200ms ease-out;
+    
 }
 .button_secondary:hover{
     background-color: #5028C6;
 }
 .button_secondary:disabled{
     background: var(--secondary);
-    opacity: 0.5;
-    cursor: default;
 }
 
 .button_altermate{
@@ -53,6 +52,6 @@ button{border: none;}
     border: 1px solid var(--black);
 }
 .button_altermate:disabled{
+    border: 1px solid var(--grey-3);
     opacity: 0.3;
-    cursor: default;
 }
