@@ -27,3 +27,5 @@
 * {
     font-family: 'Inter', 'Roboto', sans-serif;
 }
+
+html, body{min-height: 100%;}

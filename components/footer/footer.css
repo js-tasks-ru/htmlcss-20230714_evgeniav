@@ -1,8 +1,8 @@
 .footer {
-    
+    padding: 71px 0 136px;
 }
 .footer__subtitle {
-    margin: 71px 0 32px;
+    margin-bottom: 32px;
     text-align: center;
     color: #212429;
     font-size: 38px;
@@ -11,7 +11,7 @@
 }
 .footer__text {
     max-width: 640px;
-    margin: 0 auto 136px;
+    margin: 0 auto;
     text-align: center;
     color: #212429;
     font-size: 16px;
