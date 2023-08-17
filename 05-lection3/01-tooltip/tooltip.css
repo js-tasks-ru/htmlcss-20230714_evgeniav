@@ -6,6 +6,10 @@
 .tooltip__trigger {
     cursor: pointer;
 }
+.tooltip__svg{
+    width: 24px;
+    height: 24px;
+}
 .tooltip__bubble {
     display: none;
     width: 129px;
