@@ -1,22 +1,21 @@
 .histogram {
+    width: 35%;
     padding: 16px 24px 24px 26px;
     box-sizing: border-box;
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
 }
-.histogram__item {
-}
 .histogram__header {
     display: flex;
     justify-content: space-between;
-}
-.histogram__element {
+    margin-bottom: 45px;
 }
 .histogram__titles {
-    margin: 0 0 0 2px;
+    margin: 0 15px 0 2px;
 }
 .histogram__title {
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -49,6 +48,7 @@
 }
 .histogram__column {
     flex-basis: 9px;
+    flex-grow: 1;
     background-color: var(--light-blue);
 }
 .histogram__column_small {
