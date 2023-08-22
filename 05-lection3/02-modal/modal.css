@@ -39,8 +39,14 @@
 }
 .modal__close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 15px;
+    right: 15px;
     width: 10px;
+    height: 10px;
     cursor: pointer;
+}
+.modal__svg{
+    position: absolute;
+    width: 10px;
+    height: 10px;
 }
