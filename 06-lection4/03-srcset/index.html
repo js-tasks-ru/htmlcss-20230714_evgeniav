@@ -6,7 +6,10 @@
     </head>
     <body>
         <div class="picture">
-            <img class="picture__img" src="./public/forest_400.jpg" srcset="" sizes="" alt="">
+            <picture>
+                <source srcset="./public/forest_400.jpg 1x, ./public/forest_768.jpg 2x">
+                <img src="./public/forest_400.jpg" alt="" class="picture__img" >
+            </picture>
         </div>
     </body>
 </html>
