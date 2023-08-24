@@ -1,0 +1,20 @@
+.sidebar {
+    display: grid;
+    grid-template-columns: 229px;
+    row-gap: 32px;
+}
+.sidebar__item {
+    display: grid;
+    row-gap: 8px;
+}
+.sidebar__title {
+    margin-bottom: 12px;
+}
+.sidebar__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #212429;
+}
