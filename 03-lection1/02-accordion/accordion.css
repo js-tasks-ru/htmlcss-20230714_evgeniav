@@ -1,6 +1,5 @@
 /* Стилизация аккордеона */
 .accordion {
-    max-width: 730px;
 }
 .accordion__item{
     margin: 0 0 8px;
@@ -18,10 +17,10 @@
     line-height: 24px;
     color: var(--black);
 }
-summary::marker {
+.accordion__summary::marker {
     content: "";
 }
-.accordion__item p{
+.accordion__text {
     padding: 16px 0 8px;
     font-style: normal;
     font-weight: 400;
