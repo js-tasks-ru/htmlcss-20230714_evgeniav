@@ -1,5 +1,4 @@
 .histogram {
-    width: 35%;
     padding: 16px 24px 24px 26px;
     box-sizing: border-box;
     background-color: var(--white);
@@ -9,13 +8,10 @@
 .histogram__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
-}
-.histogram__titles {
-    margin: 0 15px 0 2px;
+    margin-bottom: 39px;
 }
 .histogram__title {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -28,7 +24,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: --black;
+    color: var(--black);
 }
 .histogram__link {
     display: inline-block;
