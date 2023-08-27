@@ -17,17 +17,22 @@
     background: var(--grey-2);
     border-radius: 50%;
 }
+.skeleton__column{
+    display: grid;
+    row-gap: 8px;
+    width: 100%;
+}
 .skeleton__column_small{
-    /* width: %; */
+    width: 55%;
 }
 .skeleton__column_large{
-    /* width: %; */
+    width: 80%;
 }
-.skeleton__element{
-    margin: 0 0 8px;
+.skeleton__line{
     height: 20px;
     background: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, var(--grey-2) 102.52%);
 }
-.skeleton__bottom_bottom{
-    margin-bottom: 0;
+.skeleton__bottom{
+    display: grid;
+    row-gap: 8px;
 }
