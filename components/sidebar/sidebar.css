@@ -1,6 +1,6 @@
 .sidebar {
-    display: grid;
-    grid-template-columns: 229px;
+    display: flex;
+    flex-direction: column;
     row-gap: 32px;
 }
 .sidebar__item {

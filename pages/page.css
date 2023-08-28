@@ -1,0 +1,7 @@
+.page{
+    display: grid;
+    gap: 56px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    background-color: var(--grey-5);
+}
