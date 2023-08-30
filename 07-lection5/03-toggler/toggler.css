@@ -39,7 +39,16 @@
     letter-spacing: 0em;
     text-align: left;
 }
-
+.toggle__wrapper{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+}
+.toggle__input:not(:checked) ~ .toggle__state .toggle__control .toggle__icon {
+    width: 0;
+    height: 0;
+}
 .toggle__input:checked ~ .toggle__state .toggle__control {
     justify-content: flex-end;
     background: var(--blue-2);
