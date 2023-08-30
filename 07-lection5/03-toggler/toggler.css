@@ -1,0 +1,62 @@
+:root{
+    --blue-2: #4263EB;
+}
+
+.toggle {
+    display: inline-flex;
+    position: relative;
+}
+.toggle__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateX(-100vw);
+}
+.toggle__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.toggle__control {
+    width: 52px;
+    height: 28px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.toggle__icon {
+}
+.toggle__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+    justify-content: flex-end;
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__title {
+    text-decoration: underline;
+}
+
+.toggle__state:disabled {
+    pointer-events: none;
+}
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+    background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title {
+    color: var(--grey-2);
+}
