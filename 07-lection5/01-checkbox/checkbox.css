@@ -48,7 +48,7 @@
     text-decoration: underline;
 }
 
-.checkbox__state:disabled {
+.checkbox__input:disabled ~ .checkbox__state {
     pointer-events: none;
 }
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
