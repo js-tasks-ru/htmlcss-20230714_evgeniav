@@ -2,6 +2,7 @@
 .accordion {
 }
 .accordion__item{
+    position: relative;
     margin: 0 0 8px;
     padding: 24px 32px;
     border: 1px solid var(--grey-3);
@@ -27,4 +28,20 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 22px;
+    right: 32px;
+    width: 18px;
+    height: 10px;
+}
+.accordion__svg {
+    width: 18px;
+    height: 10px;
+}
+.accordion__item[open] .accordion__icon {
+    transform: rotate(180deg);
+    top: 35px;
 }
