@@ -18,3 +18,8 @@
     line-height: 22px;
     color: #212429;
 }
+@media (max-width: 375px) {
+    .sidebar{
+        display: none;
+    }
+}
