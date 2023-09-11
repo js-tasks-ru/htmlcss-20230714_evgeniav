@@ -354,3 +354,7 @@ button{border: none;}
 h2{padding: 0; margin: 0;}
 a{text-decoration: none;}
 body{padding: 0; margin: 0;}
+button{background: none;}
+ul{padding: 0; margin: 0;}
+li{list-style-type: none;}
+p{margin: 0;}

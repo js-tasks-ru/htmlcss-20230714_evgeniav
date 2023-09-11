@@ -2,11 +2,42 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <div class="burger-menu__icon burger-menu__icon_open" id="burger-menu-open">
+            <svg class="burger-menu__svg">
+                <use href="../../assets/images/icons-sprite.svg#burger">
+            </svg>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__icon burger-menu__icon_close" id="burger-menu-close">
+                <svg class="burger-menu__svg">
+                    <use href="../../assets/images/icons-sprite.svg#cross">
+                </svg>
+            </div>
+            <div class="container">
+                <div class="burger-menu__line"></div>
+                <div class="burger-menu__mode">
+                    <p class="burger-menu__text">Dark mode</p>
+                </div>
+                <div class="burger-menu__line"></div>
+                <nav class="burger-menu__navigation">
+                    <h2 class="burger-menu__title">Component</h2>
+                    <ul class="burger-menu__list">
+                        <li><a href="" class="burger-menu__link">Modal</a></li>
+                        <li><a href="" class="burger-menu__link">Tooltip</a></li>
+                        <li><a href="" class="burger-menu__link">Avatar</a></li>
+                        <li><a href="" class="burger-menu__link">Calendar</a></li>
+                        <li><a href="" class="burger-menu__link">Histogram</a></li>
+                        <li><a href="" class="burger-menu__link">Custom form elements</a></li>
+                        <li><a href="" class="burger-menu__link">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </body>
 </html>
