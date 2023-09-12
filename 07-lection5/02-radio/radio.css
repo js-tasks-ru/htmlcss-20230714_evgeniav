@@ -1,7 +1,3 @@
-:root{
-    --blue-2: #4263EB;
-}
-
 .radio {
     display: inline-flex;
     position: relative;
@@ -52,7 +48,7 @@
     text-decoration: underline;
 }
 
-.radio__state:disabled {
+.radio__input:disabled ~ .radio__state {
     pointer-events: none;
 }
 .radio__input:disabled ~ .radio__state .radio__control {
