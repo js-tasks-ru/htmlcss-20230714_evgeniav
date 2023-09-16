@@ -1,7 +1,7 @@
 .content{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 38px 1fr 37px 1px 1fr;
+    grid-template-rows: 38px 1fr 1fr;
     padding: 32px 0;
     background-color: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
@@ -22,17 +22,12 @@
 .content__tab {
     margin: 0 0 0 48px;
 }
-.content__line {
-    height: 1px;
-    margin-bottom: 50px;
-    background-color: var(--grey-2);
-}
 .content__code {
     margin: 0 0 0 42px;
 }
 @media (max-width: 375px) {
     .content{
-        grid-template-rows: 26px 1fr 37px 1px 1fr;
+        grid-template-rows: 26px 1fr 1fr;
         padding: 32px 0 15px 0;
         background-color: var(--white);
         box-shadow: none;
@@ -48,9 +43,6 @@
     }
     .content__tab {
         margin-left: 16px;
-    }
-    .content__line {
-        margin-bottom: 22px;
     }
     .content__code {
         margin: 0 0 0 8px;
