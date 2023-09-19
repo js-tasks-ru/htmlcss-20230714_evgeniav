@@ -1,3 +1,4 @@
+*{border: 1px solid green;}
 .tabs {
     
 }
@@ -24,7 +25,7 @@
     line-height: 24px;
     text-transform: uppercase;
 }
-/* .tabs__label::after{    
+.tabs__label::after{    
     display: block;
     position: absolute;
     bottom: 0;
@@ -32,24 +33,43 @@
     height: 5px;
     background-color: var(--black);
 }
-.tabs__input:checked ~ .tabs__scroller .tabs__label::after{
+#html-tab:checked ~ .tabs__scroller .tabs__label_left::after{
     content: '';
-} */
+}
+#html-tab:checked ~ .tabs__scroller .tabs__label_left{
+    color: var(--black);
+}
+#css-tab:checked ~ .tabs__scroller .tabs__label_rigth::after{
+    content: '';
+}
+#css-tab:checked ~ .tabs__scroller .tabs__label_rigth{
+    color: var(--black);
+}
 .tabs__line {
     height: 1px;
     margin-bottom: 50px;
     background-color: var(--grey-2);
 }
-.tabs__content {
+.tabs__code {
     margin: 0 0 0 42px;
+    position: absolute;
+    transform: translateX(-1000px);
 }
-.tabs__content_html {
+#html-tab:checked ~ .tabs__code_html{
+    transform: translateX(0)
 }
-.tabs__content_css {
+#css-tab:checked ~ .tabs__code_css{
+    transform: translateX(0)
+}
+.tabs__code-text{
+    display: flex;
 }
 
 
 @media (max-width: 375px) {
+    .tabs__scroller {
+        margin-left: 16px;
+    }
     .content__line {
         margin-bottom: 22px;
     }
