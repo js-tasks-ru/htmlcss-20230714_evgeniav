@@ -8,17 +8,17 @@
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <div class="burger-menu__icon burger-menu__icon_open" id="burger-menu-open">
+        <button class="burger-menu__icon burger-menu__icon_open" id="burger-menu-open">
             <svg class="burger-menu__svg">
                 <use href="../../assets/images/icons-sprite.svg#burger">
             </svg>
-        </div>
+        </button>
         <div class="burger-menu" id="burger-menu">
-            <div class="burger-menu__icon burger-menu__icon_close" id="burger-menu-close">
+            <button class="burger-menu__icon burger-menu__icon_close" id="burger-menu-close">
                 <svg class="burger-menu__svg">
                     <use href="../../assets/images/icons-sprite.svg#cross">
                 </svg>
-            </div>
+            </button>
             <div class="container">
                 <div class="burger-menu__line"></div>
                 <div class="burger-menu__mode">
@@ -34,7 +34,7 @@
                         <li><a href="" class="burger-menu__link">Calendar</a></li>
                         <li><a href="" class="burger-menu__link">Histogram</a></li>
                         <li><a href="" class="burger-menu__link">Custom form elements</a></li>
-                        <li><a href="" class="burger-menu__link">Main page</a></li>
+                        <li class="burger-menu__li burger-menu__li_last-li"><a href="" class="burger-menu__link">Main page</a></li>
                     </ul>
                 </nav>
             </div>
