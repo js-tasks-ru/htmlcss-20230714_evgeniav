@@ -1,10 +1,8 @@
 .entry-field{
     display: block;
-    width: 350px;
-    height: 56px;
     position: relative;
 }
-.entry-field__input {
+.field-input {
     width: 350px;
     height: 56px;
     padding: 0 50px 0 24px;
@@ -20,46 +18,34 @@
 }
 .entry-field__icon{
     position: absolute;
-    top: -1000px;
+    opacity: 0;
+    top: 16px;
     right: 16px;
 }
-
-.entry-field__input_success {
-    border: 1px solid var(--grey-2);
-    outline: none;
+.entry-field__wrapper{
+    width: 350px;
+    position: relative;
 }
-.entry-field__input_invalid {
-    border: 1px solid var(--red);
-    outline: none;
-}
-
-.entry-field__input::placeholder {
+.field-input::placeholder {
     color: var(--grey-2);
 }
 
-.entry-field__input:focus{
+.field-input:focus{
     border: 1px solid var(--light-blue);
     outline: none;
 }
 
-.entry-field__input_success:focus {
+.entry-field_success > .entry-field__wrapper .entry-field__icon {
+    opacity: 1;
+}
+.entry-field_success > .entry-field__wrapper .field-input {
     border: 1px solid var(--grey-2);
     outline: none;
 }
-.entry-field__input_invalid:focus{
+.entry-field_invalid > .entry-field__wrapper .entry-field__icon {
+    opacity: 1;
+}
+.entry-field_invalid > .entry-field__wrapper .field-input {
     border: 1px solid var(--red);
     outline: none;
-}
-
-.entry-field__input:focus ~ .entry-field__icon_success {
-    top: 16px;
-}
-.entry-field__input:focus ~ .entry-field__icon_invalid {
-    top: 16px;
-}
-.entry-field__input ~ .entry-field__icon_success {
-    top: 16px;
-}
-.entry-field__input ~ .entry-field__icon_invalid {
-    top: 16px;
 }
