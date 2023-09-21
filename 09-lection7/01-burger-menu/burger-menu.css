@@ -86,4 +86,7 @@
     .burger-menu__li_last-li {
         margin-top: 56px;
     }
+    .burger-menu__link:visited {
+        color: var(--red-2);
+    }
 }
