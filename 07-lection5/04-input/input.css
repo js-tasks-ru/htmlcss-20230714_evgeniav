@@ -15,6 +15,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    transition: border 0.2s linear;
 }
 .entry-field__icon{
     position: absolute;
