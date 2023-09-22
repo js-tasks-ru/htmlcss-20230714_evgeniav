@@ -24,6 +24,7 @@
     background-color: var(--white);
     display: flex;
     align-items: center;
+    transition: background-color 0.5s ease, border 0.5s ease;
 }
 .toggle__icon {
 }
@@ -40,6 +41,7 @@
     height: 24px;
     border-radius: 50%;
     background-color: var(--grey-2);
+    transition: background-color 0.5s ease;
 }
 .toggle__input:not(:checked) ~ .toggle__state .toggle__control .toggle__icon {
     width: 0;
