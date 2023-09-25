@@ -2,9 +2,6 @@
     .burger-menu {
         display: none;
     }
-    .header__toggle-burger-menu{
-        display: none;
-    }
 }
 
 @media (max-width: 375px){
@@ -24,7 +21,7 @@
         background-color: var(--grey-2);
         border-radius: 50%;
     }
-    .burger-menu__close .burger-menu__svg{
+    .burger-menu__svg{
         width: 24px;
         height: 24px;
     }

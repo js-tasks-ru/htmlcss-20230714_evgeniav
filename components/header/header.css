@@ -18,3 +18,8 @@
         height: 24px;
     }
 }
+@media (min-width: 375px){
+    .header__toggle-burger-menu{
+        display: none;
+    }
+}
