@@ -8,3 +8,18 @@
     line-height: 64px;
     font-weight: 500;
 }
+
+@media (max-width: 375px) {
+    .header__toggle-burger-menu{
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (min-width: 375px){
+    .header__toggle-burger-menu{
+        display: none;
+    }
+}

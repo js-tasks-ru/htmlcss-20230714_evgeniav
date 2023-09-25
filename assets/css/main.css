@@ -6,6 +6,8 @@
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+
 
 :root {
     --white: #ffffff;
@@ -18,6 +20,7 @@
     --blue-2: #4263EB;
     --light-blue: #4263EB;
     --red: #F03D3E;
+    --red-2: #D84910;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
