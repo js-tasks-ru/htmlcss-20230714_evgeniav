@@ -46,7 +46,20 @@
     flex-basis: 9px;
     flex-grow: 1;
     background-color: var(--light-blue);
+    animation: height 0.6s ease-out;
 }
+
+@keyframes height{
+    0%{
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100%{
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}
+
 .histogram__column_small {
     height: 22%;
 }
