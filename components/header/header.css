@@ -56,14 +56,13 @@
     font-weight: 500;
 }
 
-
 @media (max-width: 375px) {
     .header__title {
         font-size: 28px;
         line-height: 38px;
         font-weight: 400;
     }
-    .header__burger{
+    .header__toggle-burger-menu{
         position: absolute;
         top: 20px;
         left: 16px;
@@ -76,5 +75,10 @@
     .header__top{
         justify-content: center;
         margin: 16px 0;
+    }
+}
+@media (min-width: 375px){
+    .header__toggle-burger-menu{
+        display: none;
     }
 }
