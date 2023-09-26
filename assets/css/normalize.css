@@ -352,3 +352,4 @@ button{border: none;}
 
   body, h2, p, figure, pre{margin: 0; padding: 0;}
   a{text-decoration: none;}
+  li {list-style-type: none;}
