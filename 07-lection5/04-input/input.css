@@ -1,8 +1,6 @@
 .entry-field{
-    display: block;
-    position: relative;
 }
-.field-input {
+.entry-field__input {
     width: 350px;
     height: 56px;
     padding: 0 50px 0 24px;
@@ -21,32 +19,31 @@
     position: absolute;
     opacity: 0;
     top: 16px;
-    right: 16px;
+    left: 310px;
 }
 .entry-field__wrapper{
-    width: 350px;
     position: relative;
 }
-.field-input::placeholder {
+.entry-field__input::placeholder {
     color: var(--grey-2);
 }
 
-.field-input:focus{
+.entry-field__input:focus{
     border: 1px solid var(--light-blue);
     outline: none;
 }
 
-.entry-field_success > .entry-field__wrapper .entry-field__icon {
+.entry-field_success .entry-field__icon_success {
     opacity: 1;
 }
-.entry-field_success > .entry-field__wrapper .field-input {
+.entry-field_success .entry-field__input {
     border: 1px solid var(--grey-2);
     outline: none;
 }
-.entry-field_invalid > .entry-field__wrapper .entry-field__icon {
+.entry-field_invalid .entry-field__icon_invalid {
     opacity: 1;
 }
-.entry-field_invalid > .entry-field__wrapper .field-input {
+.entry-field_invalid .entry-field__input {
     border: 1px solid var(--red);
     outline: none;
 }
