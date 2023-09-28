@@ -6,6 +6,9 @@
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/section/section.css';
+@import '../../components/main/main.css';
 @import '../../components/tabs/tabs.css';
 
 :root {
@@ -16,8 +19,10 @@
     --purple: #7048E8;
     --light-purple: #A0B1F5;
     --blue: #374FC7;
+    --blue-2: #4263EB;
     --light-blue: #4263EB;
     --red: #F03D3E;
+    --red-2: #D84910;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
@@ -31,7 +36,7 @@
 }
 
 * {
-    font-family: 'Inter', 'Source Sans Pro', 'Roboto', sans-serif;
+    font-family: 'Inter' ,'Roboto', sans-serif;
 }
 
 html, body{min-height: 100%;}

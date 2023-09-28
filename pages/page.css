@@ -1,0 +1,12 @@
+.page{
+    display: grid;
+    gap: 56px;
+    grid-template-rows: 50px 1fr 100px;
+    background-color: var(--grey-5);
+}
+@media (max-width: 375px) {
+    .page{
+        gap: 0;
+        grid-template-rows: 64px 1fr;
+    }
+}
