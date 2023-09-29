@@ -10,6 +10,7 @@
 @import '../../components/section/section.css';
 @import '../../components/main/main.css';
 @import '../../components/tabs/tabs.css';
+@import '../../components/burger-menu/burger-menu.css';
 
 :root {
     --white: #ffffff;
@@ -39,4 +40,4 @@
     font-family: 'Inter' ,'Roboto', sans-serif;
 }
 
-html, body{min-height: 100%;}
+html, body{min-height: 100vh;}

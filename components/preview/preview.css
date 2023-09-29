@@ -1,6 +1,5 @@
 .preview{
-    background-color: #F9FAFC;
-    padding: 67px 0;
+
 }
 .preview__cards {
     display: flex;
@@ -11,8 +10,6 @@
 @media (max-width: 375px) {
     .preview__cards {
         gap: 16px;
-    }
-    .preview{
-        padding: 24px 0;
+        padding: 16px;
     }
 }
