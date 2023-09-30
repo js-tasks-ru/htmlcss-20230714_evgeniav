@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "build": "postcss component/index.scss -o build/index.css"
   },
   "husky": {
     "hooks": {
@@ -25,8 +26,17 @@
     "mocha": "^7.1.2"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "postcss": "^8.4.31",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^2.2.1",
+    "sass": "^1.68.0"
   }
 }
