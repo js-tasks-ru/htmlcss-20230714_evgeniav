@@ -21,7 +21,7 @@
         background-color: var(--grey-2);
         border-radius: 50%;
     }
-    .burger-menu__close .burger-menu__svg{
+    .burger-menu__svg_smaller-size{
         width: 24px;
         height: 24px;
     }
