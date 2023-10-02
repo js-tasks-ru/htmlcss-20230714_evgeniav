@@ -11,8 +11,8 @@
     display: flex;
     gap: 40px;
 }
-.tabs__scroller_margin-left{
-    margin-left:48px;
+.tabs__label_left{
+    margin-left: 33px;
 }
 .tabs__label{
     position: relative;
@@ -156,9 +156,6 @@
 
 
 @media (max-width: 375px) {
-    .tabs__scroller_margin-left {
-        margin-left: 16px;
-    }
     .tabs__menu{
         margin-left: 16px;
     }
