@@ -19,10 +19,11 @@
     position: absolute;
     opacity: 0;
     top: 16px;
-    left: 310px;
+    right: 16px;
 }
 .entry-field__wrapper{
     position: relative;
+    max-width: 350px;
 }
 .entry-field__input::placeholder {
     color: var(--grey-2);
