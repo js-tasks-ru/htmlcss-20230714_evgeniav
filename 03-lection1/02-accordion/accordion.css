@@ -13,6 +13,9 @@
 .accordion__item__item[open] .accordion__svg {
   transform: rotate(180deg);
 }
+.accordion__item[open] .accordion__summary {
+  margin-bottom: 16px;
+}
 .accordion__summary {
   display: flex;
   justify-content: space-between;
@@ -22,12 +25,13 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--black);
+  transition: margin 250ms linear;
 }
 .accordion__summary__summary::marker {
   content: "";
 }
 .accordion__text {
-  padding: 16px 0 8px;
+  padding: 0 0 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
