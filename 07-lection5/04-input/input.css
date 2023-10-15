@@ -15,6 +15,18 @@
     line-height: 26px;
     transition: border 0.2s linear;
 }
+.entry-field__label {
+    margin-bottom: 5px;
+    display: block;
+    color: var(--Gray-3, #ACB5BD);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
 .entry-field__icon{
     position: absolute;
     opacity: 0;
