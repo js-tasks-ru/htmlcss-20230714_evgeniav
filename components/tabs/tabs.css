@@ -130,28 +130,18 @@
 .tabs__content {
     margin: 0;
     padding: 67px 0 92px;
-    transform: translateX(-100vw);
+    display: none;
     width: 100%;
     background-color: #F9FAFC;
 }
 #all-tab:checked ~ .tabs__content_all{
-    transform: translateX(0);
+    display: block;
 }
 #complex-tab:checked ~ .tabs__content_complex{
-    transform: translateX(0);
+    display: block;
 }
 #simple-tab:checked ~ .tabs__content_simple{
-    transform: translateX(0);
-}
-
-#all-tab:not(:checked) ~ .tabs__content_all{
-    position: absolute;
-}
-#complex-tab:not(:checked) ~ .tabs__content_complex{
-    position: absolute;
-}
-#simple-tab:not(:checked) ~ .tabs__content_simple{
-    position: absolute;
+    display: block;
 }
 
 
