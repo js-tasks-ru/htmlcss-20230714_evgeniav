@@ -1,0 +1,75 @@
+$white: #ffffff;
+$black: #212429;
+$black-2: #334D6E;
+$pink: #F784AD;
+$purple: #7048E8;
+$light-purple: #A0B1F5;
+$blue: #374FC7;
+$blue-2: #4263EB;
+$light-blue: #4263EB;
+$red: #F03D3E;
+$red-2: #D84910;
+$grey-1: #F8F9FA;
+$grey-2: #DDE2E5;
+$grey-3: #ACB5BD;
+$grey-4: #495057;
+
+$error: $red;
+$success: $blue;
+
+$primary: $blue;
+$secondary: $purple;
+
+@mixin text($fw: false, $fsz: false, $lh: false){
+    @if ($fw){
+        font-weight: $fw;
+    }
+    @if ($fsz){
+        font-size: $fsz;
+    }
+    @if ($lh){
+        line-height: $lh;
+    }
+}
+
+@mixin size($w: false, $h: false){
+    @if ($w){
+        width: $w;
+    }
+    @if ($h){
+        height: $h;
+    }
+}
+
+@import '../scss/fonts';
+@import '../../assets/css/normalize.css';
+@import '../../components/container/container.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+@import '../../components/preview/preview.css';
+@import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/section/section.css';
+@import '../../components/main/main.css';
+@import '../../components/tabs/tabs.css';
+@import '../scss/accordion';
+@import '../scss/avatar';
+@import '../scss/button';
+@import '../scss/calendar';
+@import '../scss/checkbox';
+@import '../scss/radio';
+@import '../scss/toggler';
+@import '../scss/tooltip';
+@import '../scss/modal';
+@import '../scss/histogram';
+@import '../scss/skeleton';
+@import '../scss/burger-menu';
+
+
+
+* {
+    font-family: 'Inter' ,'Roboto', sans-serif;
+}
+
+html, body{min-height: 100%;}

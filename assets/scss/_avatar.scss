@@ -1,0 +1,9 @@
+.avatar {
+    @include size(102px, 102px);
+
+    &__img {
+        @include size(100%, 100%);
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,37 @@
+.accordion {
+    &__item{
+        position: relative;
+        margin: 0 0 8px;
+        padding: 24px 32px;
+        border: 1px solid $grey-3;
+        border-radius: 8px;
+
+        &__item:last-child{
+            margin: 0;
+        }
+        
+        &__item[open] .accordion__svg {
+            transform: rotate(180deg);
+        }
+    }
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include text(400, 16px, 24px);
+        color: $black;
+
+        &__summary::marker {
+            content: "";
+        }
+    }
+    &__text {
+        padding: 16px 0 8px;
+        @include text(400, 16px, 24px);
+        color: $grey-4;
+    }
+    &__svg {
+        width: 18px;
+        height: 10px;
+    }
+}

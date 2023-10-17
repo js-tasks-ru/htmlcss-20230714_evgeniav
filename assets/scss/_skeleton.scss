@@ -1,0 +1,52 @@
+.skeleton {
+    padding: 24px 40px 32px 24px;
+    background-color: $white;
+    border: 1px solid $grey-3;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    &__top{
+        display: flex;
+        align-items: center;
+        margin: 0 0 24px;
+    }
+    &__avatar{
+        @include size(64px, 64px);
+        margin: 0 16px 0 0;
+        background: $grey-2;
+        border-radius: 50%;
+    }
+    &__column{
+        display: grid;
+        row-gap: 8px;
+        width: 100%;
+
+        &_small{
+            width: 55%;
+        }
+        &_large{
+            width: 80%;
+        }
+    }
+    &__line{
+        height: 20px;
+        background: linear-gradient(92.51deg, $grey-2 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, $grey-2 102.52%);
+        background-size: 200%;
+        animation-name: gradient;
+        animation-timing-function: linear;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes gradient{
+        0%{
+            background-position: 100%;
+        }
+        100%{
+            background-position: -100%;
+        }
+    }
+    &__bottom{
+        display: grid;
+        row-gap: 8px;
+    }
+}
