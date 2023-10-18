@@ -43,16 +43,8 @@ $secondary: $purple;
 
 @import '../scss/fonts';
 @import '../../assets/css/normalize.css';
-@import '../../components/container/container.css';
-@import '../../components/page/page.css';
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
-@import '../../components/preview/preview.css';
-@import '../../components/card/card.css';
-@import '../../components/sidebar/sidebar.css';
-@import '../../components/section/section.css';
-@import '../../components/main/main.css';
-@import '../../components/tabs/tabs.css';
 @import '../scss/accordion';
 @import '../scss/avatar';
 @import '../scss/button';
@@ -65,6 +57,13 @@ $secondary: $purple;
 @import '../scss/histogram';
 @import '../scss/skeleton';
 @import '../scss/burger-menu';
+@import '../scss/sidebar';
+@import '../scss/section';
+@import '../scss/tabs';
+@import '../scss/main';
+@import '../scss/card';
+@import '../scss/preview';
+@import '../scss/container';
 
 
 
