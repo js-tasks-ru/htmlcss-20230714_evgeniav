@@ -2,25 +2,126 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
     </head>
     <body>
         <div class="page">
+            <div class="burger-menu" id="burger-menu">
+                <button class="burger-menu__close" id="burger-menu-close">
+                    <svg class="burger-menu__svg burger-menu__svg_smaller-size">
+                        <use href="../../assets/images/icons-sprite.svg#cross">
+                    </svg>
+                </button>            
+                <div class="burger-menu__logo">
+                    <svg class="burger-menu__svg burger-menu__svg_square">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-left">
+                    </svg>
+                    <svg class="burger-menu__svg">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-center">
+                    </svg>
+                    <svg class="burger-menu__svg">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-rigth">
+                    </svg>
+                </div>
+                <nav class="burger-menu__navigation">
+                    <h2 class="burger-menu__title">Component</h2>
+                    <ul class="burger-menu__list">
+                        <li><a href="" class="burger-menu__link">Modal</a></li>
+                        <li><a href="" class="burger-menu__link">Tooltip</a></li>
+                        <li><a href="" class="burger-menu__link">Avatar</a></li>
+                        <li><a href="" class="burger-menu__link">Calendar</a></li>
+                        <li><a href="" class="burger-menu__link">Histogram</a></li>
+                        <li><a href="" class="burger-menu__link">Custom form elements</a></li>
+                        <li class="burger-menu__li"><a href="" class="burger-menu__link">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
             <header class="header">
+                <button class="header__toggle-burger-menu" id="burger-menu-open">
+                    <svg class="header__svg">
+                        <use href="../../assets/images/icons-sprite.svg#burger">
+                    </svg>
+                </button>
                 <div class="container">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <svg class="header__svg header__svg_square">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-left">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-center">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-rigth">
+                            </svg>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li><a href="" class="header__link">Components</a>
+                                <li><a href="" class="header__link">About</a></li>
+                                <li><a href="" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
-            <main class="preview page__main">
-                <div class="container">
-                    <div class="preview__cards">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
+            <main class="page__main">
+                <div class="tabs">
+                    <input class="tabs__input" type="radio" name="radio" id="all-tab" checked>
+                    <input class="tabs__input" type="radio" name="radio" id="complex-tab">
+                    <input class="tabs__input" type="radio" name="radio" id="simple-tab">
+                
+                    <div class="tabs__menu">
+                        <div class="container">
+                            <div class="tabs__scroller">
+                                <label class="tabs__label tabs__label_left" for="all-tab">All components</label>
+                                <label class="tabs__label tabs__label_center" for="complex-tab">Complex</label>
+                                <label class="tabs__label tabs__label_rigth" for="simple-tab">Simple</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs__line"></div>
+                    
+                    <div class="tabs__content tabs__content_all">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="tabs__content tabs__content_complex">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_simple">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <div class="card"></div>
+                                    <div class="card"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

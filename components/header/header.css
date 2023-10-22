@@ -27,29 +27,20 @@
     display: flex;
     gap: 24px;
 }
-.header__link{
-    color: var(--Black);
+.header__link{    
+    color: var(--grey-3);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
-
-.header__burger{
-    position: absolute;
-    left: -100px;
-    width: 24px;
-    height: 24px;
-}
-
-.header__icon{
-    width: 24px;
-    height: 24px;
+.header__link:visited{
+    color: var(--black);
 }
 
 .header__title {
-    padding: 96px 0 77px;
+    margin: 0 0 40px;
     color: #212429;
     font-size: 50px;
     line-height: 64px;
@@ -58,6 +49,7 @@
 
 @media (max-width: 375px) {
     .header__title {
+        margin-left:16px;
         font-size: 28px;
         line-height: 38px;
         font-weight: 400;
