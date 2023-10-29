@@ -1,0 +1,53 @@
+.button {
+    height: 48px;
+    padding: 0 65.5px;
+    border-radius: 8px;
+    color: $white;
+    font-family: 'Roboto';
+    @include text(500, 16px, 19px);
+    cursor: pointer;
+    transition: background-color 200ms ease-out;
+
+    &:active {
+        transform: translateY(1px);
+        transition: transform 200ms linear;
+    }
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &_primary {
+        background-color: $primary;
+
+        &:hover {
+            background-color: #2342C0;
+        }
+        &:disabled {
+            background: $primary;
+        }
+    }
+    &_secondary {
+        background-color: $secondary;
+        &:hover {
+            background-color: #5028C6;
+        }
+        &:disabled {
+            background: $secondary;
+        }
+    }
+    &_altermate {
+        background-color: $white;
+        border: 1px solid $grey-3;
+        color: $grey-4;
+        box-sizing: border-box;
+        transition: border 200ms ease-out;
+
+        &:hover {
+            border: 1px solid $black;
+        }
+        &:disabled {
+            border: 1px solid $grey-3;
+            opacity: 0.3;
+        }  
+    }
+}

@@ -1,0 +1,19 @@
+.main {
+    flex-grow: 1;
+
+    &__grid{
+        display: grid;
+        gap: 56px;
+        grid-template-columns: 170px 1fr;
+        grid-template-rows: 1fr;
+
+        @media (max-width: 375px) {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 375px) {
+        background-color: var(--white);
+    }
+}

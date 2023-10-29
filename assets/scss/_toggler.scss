@@ -1,0 +1,66 @@
+.toggle {
+    display: inline-flex;
+    position: relative;
+    
+    &__input {
+        position: absolute;
+        @include size(0, 0);
+        transform: translateX(-100vw);
+
+        
+        &:not(:checked) ~ .toggle__state .toggle__control .toggle__icon {
+            @include size(0, 0);
+        }
+        &:checked ~ .toggle__state .toggle__control {
+            justify-content: flex-end;
+            background: $blue-2;
+            border-color: $blue-2;
+        }
+
+        &:focus ~ .toggle__state .toggle__title {
+            text-decoration: underline;
+        }
+
+        &:disabled ~ .toggle__state {
+            pointer-events: none;
+            
+            & .toggle__control {
+                background: $grey-2;
+            }
+            & .toggle__title {
+                color: $grey-2;
+            }
+        }
+    }
+    &__state {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+    &__control {
+	    @include size(52px, 28px);
+        padding: 2px;
+        box-sizing: border-box;
+        border: 1px solid $grey-2;
+        border-radius: 16px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.5s ease, border 0.5s ease;
+    }
+    &__icon {
+    }
+    &__title {
+        font-family: Inter;
+        @include text(400, 16px, 24px);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__wrapper{
+	    @include size(24px, 24px);
+        border-radius: 50%;
+        background-color: $grey-2;
+        transition: background-color 0.5s ease;
+    }
+}
