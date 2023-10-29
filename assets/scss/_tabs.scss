@@ -1,10 +1,6 @@
 .tabs {
-
-    @media (max-width: 375px) {
-        &__scroller {
-            margin-left: 16px;
-        }
-        .content__line {
+    & .content__line {
+        @media (max-width: 375px) {
             margin-bottom: 22px;
         }
     }
@@ -37,6 +33,10 @@
         display: flex;
         gap: 40px;
         margin: 0 0 0 48px;
+
+        @media (max-width: 375px) {
+            margin-left: 16px;
+        }
     }
     &__label{
         position: relative;
@@ -46,15 +46,16 @@
         font-family: Inter;
         @include text(400, 16px, 24px);
         text-transform: uppercase;
-    }
-    &__label::after{    
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 5px;
-        @include size(100%, 5px);
-        background-color: $black;
+        
+        &::after{    
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            @include size(100%, 5px);
+            background-color: $black;
+        }
     }
     &__line {
         height: 1px;

@@ -36,16 +36,16 @@
         @include text(400, 16px, 20px);
         color: $black-2;
         
-        &__item_day {
+        &_day {
             font-family: 'Inter';
             @include text(400, 14px, 20px);
             color: #90A0B7;
         }
-        &__item_dedicated {
+        &_dedicated {
             background-color: rgba(160, 177, 245, 0.2);
             color: $black-2;
         }
-        &__item_selected {
+        &_selected {
             background-color: $light-blue;
             color: $white;
         }

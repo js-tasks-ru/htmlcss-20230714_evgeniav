@@ -9,21 +9,6 @@
         background-color: $white;
         box-shadow: none;
         border-radius: 0;
-
-        &__title {
-            margin-left: 16px;
-            font-size: 20px;
-            line-height: 26px;
-        }
-        &__component {
-            margin: 32px 0 52px 16px;
-        }
-        &__tab {
-            margin-left: 16px;
-        }
-        &__code {
-            margin: 0 0 0 8px;
-        }
     }
 
     &__title {
@@ -31,14 +16,32 @@
         color: $grey-4;
         font-family: Inter;
         @include text(400, 28px, 38px);
+
+        @media (max-width: 375px) {
+            margin-left: 16px;
+            font-size: 20px;
+            line-height: 26px;
+        }
     }
     &__component {
         margin: 58px 0 64px 48px;
+
+        @media (max-width: 375px) {
+            margin: 32px 0 52px 16px;
+        }
     }
     &__tab {
         margin: 0 0 0 48px;
+
+        @media (max-width: 375px) {
+            margin-left: 16px;
+        }
     }
     &__code {
         margin: 0 0 0 42px;
+
+        @media (max-width: 375px) {
+            margin: 0 0 0 8px;
+        }
     }
 }

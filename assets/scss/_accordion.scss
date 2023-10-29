@@ -6,11 +6,11 @@
         border: 1px solid $grey-3;
         border-radius: 8px;
 
-        &__item:last-child{
+        &:last-child{
             margin: 0;
         }
         
-        &__item[open] .accordion__svg {
+        &[open] .accordion__svg {
             transform: rotate(180deg);
         }
     }
@@ -21,7 +21,7 @@
         @include text(400, 16px, 24px);
         color: $black;
 
-        &__summary::marker {
+        &::marker {
             content: "";
         }
     }
@@ -31,7 +31,6 @@
         color: $grey-4;
     }
     &__svg {
-        width: 18px;
-        height: 10px;
+        @include size(18px, 10px);
     }
 }
