@@ -1,0 +1,66 @@
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 24px 0 38px;
+
+        @media (max-width: 375px) {
+            justify-content: center;
+            margin: 16px 0;
+        }
+    }
+    &__logo {
+        display: flex;
+        gap: 8px;
+        height: 34px;
+    }
+    &__svg {
+        @include size(32px, 32px);
+        
+        &_square{
+            width: 30px;
+        }
+    }
+    &__menu {
+        @media (max-width: 375px) {
+            display: none;
+        }
+    }
+    &__menu-list{    
+        display: flex;
+        gap: 24px;
+    }
+    &__link{    
+        color: $grey-3;
+        font-family: Inter;
+        @include text(400, 16px, 24px);
+        
+        &:visited{
+            color: $black;
+        }
+    }
+
+    &__title {
+        margin: 0 0 40px;
+        color: #212429;
+        @include text(500, 50px, 64px);
+
+        @media (max-width: 375px) {
+            margin-left:16px;
+            @include text(400, 28px, 38px);
+        }
+    }
+
+    &__toggle-burger-menu{
+        @media (min-width: 375px){
+            display: none;
+        }
+        @media (max-width: 375px) {
+            position: absolute;
+            top: 20px;
+            left: 16px;
+            @include size(24px, 24px);
+        }
+    }
+}

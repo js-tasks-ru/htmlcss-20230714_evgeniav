@@ -1,0 +1,25 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__main{
+        flex-grow: 1;
+    }
+    &__line{
+        height: 1px;
+        background: var(--grey-2);
+    }
+
+    &__grid{
+        display: grid;
+        gap: 56px;
+        grid-template-rows: 50px 1fr 100px;
+        background-color: $grey-5;
+
+        @media (max-width: 375px) {
+            gap: 0;
+            grid-template-rows: 64px 1fr;
+        }
+    }
+}

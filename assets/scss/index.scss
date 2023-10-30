@@ -44,8 +44,9 @@ $secondary: $purple;
 
 @import '../scss/fonts';
 @import '../../assets/css/normalize.css';
-@import '../../components/header/header.css';
-@import '../../components/footer/footer.css';
+@import '../scss/page';
+@import '../scss/header';
+@import '../scss/footer';
 @import '../scss/accordion';
 @import '../scss/avatar';
 @import '../scss/button';
