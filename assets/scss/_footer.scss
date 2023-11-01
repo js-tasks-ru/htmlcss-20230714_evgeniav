@@ -1,0 +1,28 @@
+.footer {
+    
+    @media (max-width: 375px) {
+        display: none;
+    }
+
+    &__subtitle {
+        margin: 71px 0 32px;
+        text-align: center;
+        color: #212429;
+        @include text(500, 38px, 48px);
+    }
+    &__text {
+        max-width: 640px;
+        margin: 0 auto 136px;
+        text-align: center;
+        color: #212429;
+        @include text(400, 16px, 24px);
+
+        &_short{
+            color: $grey-3;
+            font-family: Inter;
+            @include text(500, 12px, 18px);
+            letter-spacing: 0.48px;
+            text-transform: uppercase;
+        }
+    }
+}
