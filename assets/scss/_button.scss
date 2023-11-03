@@ -7,7 +7,11 @@
     @include text(500, 16px, 19px);
     cursor: pointer;
     transition: background-color 200ms ease-out;
-
+    
+    &_preview {
+        max-width: 260px;
+        pointer-events: none;
+    }
     &:active {
         transform: translateY(1px);
         transition: transform 200ms linear;

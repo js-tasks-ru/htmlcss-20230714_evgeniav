@@ -1,6 +1,10 @@
 .radio {
     display: inline-flex;
     position: relative;
+    
+    &_preview {
+        pointer-events: none;
+    }
 
     &__input {
         position: absolute;

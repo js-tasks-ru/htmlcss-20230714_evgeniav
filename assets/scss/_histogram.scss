@@ -5,6 +5,9 @@
     border: 1px solid $grey-3;
     border-radius: 8px;
 
+    &_preview {
+        width: 100%;
+    }
     &__header {
         display: flex;
         justify-content: space-between;

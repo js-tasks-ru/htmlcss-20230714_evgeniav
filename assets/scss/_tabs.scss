@@ -1,42 +1,110 @@
 .tabs {
-    & .content__line {
-        @media (max-width: 375px) {
-            margin-bottom: 22px;
-        }
-    }
+    
     &__input {
         position: absolute;
-        @include size(0, 0);
+        width: 0;
+        height: 0;
         transform: translateY(-100vh);
-        
-        &#html-tab:checked ~ .tabs__scroller .tabs__label_left::after{
-            content: '';
+
+        &#html-tab:checked ~ .tabs__menu .tabs__label_1::after{
+            transform: scaleX(1);
         }
-        &#html-tab:checked ~ .tabs__scroller .tabs__label_left{
+        &#html-tab:hover ~ .tabs__menu .tabs__label_1::after{
+            transform: scaleX(1);
+        }
+        &#html-tab:checked ~ .tabs__menu .tabs__label_1{
+            color: $black;
+        }
+        &#html-tab:hover ~ .tabs__menu .tabs__label_1{
             color: $black;
         }
         &#html-tab:checked ~ .tabs__code_html{
             transform: translateX(0);
         }
 
-        &#css-tab:checked ~ .tabs__scroller .tabs__label_rigth::after{
-            content: '';
+        &#css-tab:checked ~ .tabs__menu .tabs__label_2::after{
+            transform: scaleX(1);
         }
-        &#css-tab:checked ~ .tabs__scroller .tabs__label_rigth{
+        &#css-tab:hover ~ .tabs__menu .tabs__label_2::after{
+            transform: scaleX(1);
+        }
+        &#css-tab:checked ~ .tabs__menu .tabs__label_2{
+            color: $black;
+        }
+        &#css-tab:hover ~ .tabs__menu .tabs__label_2{
             color: $black;
         }
         &#css-tab:checked ~ .tabs__code_css{
             transform: translateX(0);
         }
+
+        &#all-tab:checked ~ .tabs__menu .tabs__label_1::after{
+            transform: scaleX(1);
+        }
+        &#all-tab:hover ~ .tabs__menu .tabs__label_1::after{
+            transform: scaleX(1);
+        }
+        &#all-tab:checked ~ .tabs__menu .tabs__label_1{
+            color: $black;
+        }
+        &#all-tab:hover ~ .tabs__menu .tabs__label_1{
+            color: $black;
+        }
+        &#all-tab:checked ~ .tabs__content_all{
+            display: block;
+        }
+    
+        &#atoms-tab:checked ~ .tabs__menu .tabs__label_2::after{
+            transform: scaleX(1);
+        }
+        &#atoms-tab:hover ~ .tabs__menu .tabs__label_2::after{
+            transform: scaleX(1);
+        }
+        &#atoms-tab:checked ~ .tabs__menu .tabs__label_2{
+            color: $black;
+        }
+        &#atoms-tab:hover ~ .tabs__menu .tabs__label_2{
+            color: $black;
+        }
+        &#atoms-tab:checked ~ .tabs__content_atoms{
+            display: block;
+        }
+    
+        &#molecules-tab:checked ~ .tabs__menu .tabs__label_3::after{
+            transform: scaleX(1);
+        }
+        &#molecules-tab:hover ~ .tabs__menu .tabs__label_3::after{
+            transform: scaleX(1);
+        }
+        &#molecules-tab:checked ~ .tabs__menu .tabs__label_3{
+            color: $black;
+        }
+        &#molecules-tab:hover ~ .tabs__menu .tabs__label_3{
+            color: $black;
+        }
+        &#molecules-tab:checked ~ .tabs__content_molecules{
+            display: block;
+        }
+
+        &#organisms-tab:checked ~ .tabs__menu .tabs__label_4::after{
+            transform: scaleX(1);
+        }
+        &#organisms-tab:hover ~ .tabs__menu .tabs__label_4::after{
+            transform: scaleX(1);
+        }
+        &#organisms-tab:checked ~ .tabs__menu .tabs__label_4{
+            color: $black;
+        }
+        &#organisms-tab:hover ~ .tabs__menu .tabs__label_4{
+            color: $black;
+        }
+        &#organisms-tab:checked ~ .tabs__content_organisms{
+            display: block;
+        }
     }
     &__scroller {
         display: flex;
         gap: 40px;
-        margin: 0 0 0 48px;
-
-        @media (max-width: 375px) {
-            margin-left: 16px;
-        }
     }
     &__label{
         position: relative;
@@ -44,30 +112,62 @@
         cursor: pointer;
         color: $grey-3;
         font-family: Inter;
-        @include text(400, 16px, 24px);
-        text-transform: uppercase;
-        
-        &::after{    
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        transition: color 250ms;
+
+        &_1{
+            margin-left: 33px;
+        }
+        &_reset{
+            margin-left: 0;
+        }
+        &_uppercase{
+            text-transform: uppercase;
+        }
+        &::after{   
+            content: ''; 
             display: block;
             position: absolute;
             bottom: 0;
             width: 100%;
             height: 5px;
-            @include size(100%, 5px);
             background-color: $black;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
         }
     }
+
     &__line {
         height: 1px;
-        margin-bottom: 50px;
         background-color: $grey-2;
     }
     &__code {
-        margin: 0 0 0 42px;
+        margin: 50px 0 0 42px;
         position: absolute;
         transform: translateX(-1000px);
     }
     &__code-text{
         display: flex;
+    }
+
+    &__content {
+        margin: 0;
+        padding: 67px 0 92px;
+        display: none;
+        width: 100%;
+        background-color: #F9FAFC;
+
+        @media (max-width: 375px) {
+            padding: 21px 0;
+        }
+    }
+
+    &__menu{
+        @media (max-width: 375px) {
+            margin-left: 16px;
+        }
     }
 }
