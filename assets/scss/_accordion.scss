@@ -1,4 +1,18 @@
 .accordion {
+
+    &_preview{
+
+        & .accordion__item {
+            padding: 5%;
+        }
+        & .accordion__summary {
+            font-size: 14px;
+        }
+        & .accordion__text {
+            font-size: 12px;
+        }
+    }
+
     &__item{
         position: relative;
         margin: 0 0 8px;
