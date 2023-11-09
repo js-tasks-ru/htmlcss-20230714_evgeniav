@@ -1,7 +1,10 @@
 .accordion {
 
     &_preview{
-
+        
+        & .accordion__item{
+            pointer-events: none;
+        }
         & .accordion__item {
             padding: 5%;
         }
