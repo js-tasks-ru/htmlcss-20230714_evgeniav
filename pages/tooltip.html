@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Страница компонента-->
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../build/index.css">
+    </head>
+    <body>
+        <div class="page page__grid">
+            <header class="header">
+                <div class="header__burger">
+                    <svg class="header__icon">
+                        <use href="../assets/images/icons-sprite.svg#burger">
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <svg class="header__svg header__svg_square">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-left">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-center">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-rigth">
+                            </svg>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li><a href="" class="header__link">Components</a>
+                                <li><a href="" class="header__link">About</a></li>
+                                <li><a href="" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <div class="main__grid">
+                        <aside class="sidebar">
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Elements</h2>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Containers</h2>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Templates</h2>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                                <a href="" class="sidebar__link">Avatar</a>
+                                <a href="" class="sidebar__link">Custom form elements</a>
+                                <a href="" class="sidebar__link">Button</a>
+                            </div>
+                        </aside>
+                        <section class="content">
+                            <div class="content__title">Tooltip</div>
+                            <div class="content__component">
+                                <div class="tooltip main__tooltip">
+                                    <div class="tooltip__trigger">
+                                        <svg class="tooltip__svg">
+                                            <use href="../../assets/images/icons-sprite.svg#question">
+                                        </svg>
+                                    </div>
+                                    <div class="tooltip__bubble">Helper Text</div>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
+                                <input class="tabs__input" type="radio" name="radio" id="css-tab">
+                            
+                                <div class="tabs__menu">
+                                    <div class="container">
+                                        <div class="tabs__scroller">
+                                            <label class="tabs__label tabs__label_left tabs__label_uppercase" for="html-tab">Html</label>
+                                            <label class="tabs__label tabs__label_rigth tabs__label_uppercase" for="css-tab">Css</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__line"></div>
+
+                                <div class="tabs__code tabs__code_html">
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltdiv class="tooltip"&gt
+    &ltdiv class="tooltip__trigger"&gt
+        &ltsvg class="tooltip__svg"&gt
+            &ltuse href="../../assets/images/icons-sprite.svg#question"&gt
+        &lt/svg&gt
+    &lt/div&gt
+    &ltdiv class="tooltip__bubble"&gtHelper Text&lt/div&gt
+&lt/div&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                                <div class="tabs__code tabs__code_css">
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tooltip__trigger {
+    cursor: pointer;
+}
+.tooltip__svg{
+    width: 24px;
+    height: 24px;
+}
+.tooltip__bubble {
+    display: none;
+    width: 129px;
+    position: absolute;
+    padding: 13px 0 8px;
+    border-radius: 10px;
+    background: #4263EB;
+    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    color: var(--grey-2);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip__bubble:after{
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #4263EB;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip__trigger:hover ~ .tooltip__bubble{
+    display: block;
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <p class="footer__text footer__text_short">
+                        Reusable component library
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -29,11 +29,11 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        @include size(10px, 10px);
+        @include size(20px, 20px);
         cursor: pointer;
     }
     &__svg{
         position: absolute;
-        @include size(10px, 10px);
+        @include size(20px, 20px);
     }
 }

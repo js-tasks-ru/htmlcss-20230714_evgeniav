@@ -70,4 +70,9 @@
     &__code-text{
         display: flex;
     }
+    &__text {
+        color: $black;        
+        font-family: Inter;
+        @include text(400, 22px, 24px);
+    }
 }
