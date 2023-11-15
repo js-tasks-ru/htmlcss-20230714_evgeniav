@@ -60,8 +60,12 @@
                             </div>
                         </aside>
                         <section class="content">
-                            <div class="content__title"></div>
-                            <div class="content__component"></div>
+                            <div class="content__title">Avatar</div>
+                            <div class="content__component">
+                                <div class="avatar">
+                                    <img src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="" class="avatar__img">
+                                </div>
+                            </div>
                             <div class="tabs">
                                 <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
                                 <input class="tabs__input" type="radio" name="radio" id="css-tab">
@@ -80,14 +84,29 @@
                                 <div class="tabs__code tabs__code_html">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>html</code>
+                                            <code>
+&ltdiv class="avatar"&gt
+    &ltimg src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="" class="avatar__img"&gt
+&lt/div&gt
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
                                 <div class="tabs__code tabs__code_css">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>css</code>
+                                            <code>
+.avatar {
+    width: 102px;
+    height: 102px;
+}
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>

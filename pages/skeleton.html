@@ -60,8 +60,22 @@
                             </div>
                         </aside>
                         <section class="content">
-                            <div class="content__title"></div>
-                            <div class="content__component"></div>
+                            <div class="content__title">Skeleton</div>
+                            <div class="content__component">
+                                <div class="skeleton">
+                                    <div class="skeleton__top">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__column">
+                                            <div class="skeleton__line skeleton__column_small"></div>
+                                            <div class="skeleton__line skeleton__column_large"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__bottom">
+                                        <div class="skeleton__line"></div>
+                                        <div class="skeleton__line"></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tabs">
                                 <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
                                 <input class="tabs__input" type="radio" name="radio" id="css-tab">
@@ -80,14 +94,80 @@
                                 <div class="tabs__code tabs__code_html">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>html</code>
+                                            <code>
+&ltdiv class="skeleton"&gt
+    &ltdiv class="skeleton__top"&gt
+        &ltdiv class="skeleton__avatar"&gt&lt/div&gt
+        &ltdiv class="skeleton__column"&gt
+            &ltdiv class="skeleton__line skeleton__column_small"&gt&lt/div&gt
+            &ltdiv class="skeleton__line skeleton__column_large"&gt&lt/div&gt
+        &lt/div&gt
+    &lt/div&gt
+    &ltdiv class="skeleton__bottom"&gt
+        &ltdiv class="skeleton__line"&gt&lt/div&gt
+        &ltdiv class="skeleton__line"&gt&lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
                                 <div class="tabs__code tabs__code_css">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>css</code>
+                                            <code>
+.skeleton {
+    padding: 24px 40px 32px 24px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.skeleton__top{
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px;
+}
+.skeleton__avatar{
+    width: 64px;
+    height: 64px;
+    margin: 0 16px 0 0;
+    background: var(--grey-2);
+    border-radius: 50%;
+}
+.skeleton__column{
+    display: grid;
+    row-gap: 8px;
+    width: 100%;
+}
+.skeleton__column_small{
+    width: 55%;
+}
+.skeleton__column_large{
+    width: 80%;
+}
+.skeleton__line{
+    height: 20px;
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, var(--grey-2) 102.52%);
+    background-size: 200%;
+    animation-name: gradient;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: -100%;
+    }
+}
+.skeleton__bottom{
+    display: grid;
+    row-gap: 8px;
+}
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
