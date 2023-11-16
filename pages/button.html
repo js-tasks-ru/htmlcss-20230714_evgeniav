@@ -60,8 +60,23 @@
                             </div>
                         </aside>
                         <section class="content">
-                            <div class="content__title"></div>
-                            <div class="content__component"></div>
+                            <div class="content__title">Button</div>
+                            <div class="content__component">
+                                <div class="main__button">
+                                    <div class="main__button-primary">
+                                        <button class="button button_primary">Primary</button>
+                                        <button class="button button_primary" disabled>Primary</button>
+                                    </div>
+                                    <div class="main__button-secondary">
+                                        <button class="button button_secondary">Secondary</button>
+                                        <button class="button button_secondary" disabled>Secondary</button>
+                                    </div>
+                                    <div class="main__button-altermate">
+                                        <button class="button button_altermate">Altermate</button>
+                                        <button class="button button_altermate" disabled>Altermate</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tabs">
                                 <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
                                 <input class="tabs__input" type="radio" name="radio" id="css-tab">
@@ -69,8 +84,8 @@
                                 <div class="tabs__menu">
                                     <div class="container">
                                         <div class="tabs__scroller">
-                                            <label class="tabs__label tabs__label_1 tabs__label_uppercase" for="html-tab">Html</label>
-                                            <label class="tabs__label tabs__label_2 tabs__label_uppercase" for="css-tab">Css</label>
+                                            <label class="tabs__label tabs__label_left tabs__label_uppercase" for="html-tab">Html</label>
+                                            <label class="tabs__label tabs__label_rigth tabs__label_uppercase" for="css-tab">Css</label>
                                         </div>
                                     </div>
                                 </div>
@@ -80,14 +95,81 @@
                                 <div class="tabs__code tabs__code_html">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>html</code>
+                                            <code>  
+&ltbutton class="button button_primary"&gtPrimary&lt/button&gt
+&ltbutton class="button button_primary" disabled&gtPrimary&lt/button&gt
+&ltbutton class="button button_secondary"&gtSecondary&lt/button&gt
+&ltbutton class="button button_secondary" disabled&gtSecondary&lt/button&gt
+&ltbutton class="button button_altermate"&gtAltermate&lt/button&gt
+&ltbutton class="button button_altermate" disabled&gtAltermate&lt/button&gt
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
                                 <div class="tabs__code tabs__code_css">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>css</code>
+                                            <code>
+.button {
+    height: 48px;
+    padding: 0 65.5px;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    transition: background-color 200ms ease-out;
+}
+.button:active{
+    transform: translateY(1px);
+    transition: transform 200ms linear;
+}
+.button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button_primary{
+    background-color: var(--primary);
+    
+}
+.button_primary:hover{
+    background-color: #2342C0;
+    
+}
+.button_primary:disabled{
+    background: var(--primary);
+}
+
+.button_secondary{
+    background-color: var(--secondary);
+    
+}
+.button_secondary:hover{
+    background-color: #5028C6;
+}
+.button_secondary:disabled{
+    background: var(--secondary);
+}
+
+.button_altermate{
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
+    box-sizing: border-box;
+    transition: border 200ms ease-out;
+}
+.button_altermate:hover{
+    border: 1px solid var(--black);
+}
+.button_altermate:disabled{
+    border: 1px solid var(--grey-3);
+    opacity: 0.3;
+}
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>

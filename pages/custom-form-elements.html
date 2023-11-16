@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!-- Страница компонента-->
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../build/index.css">
+    </head>
+    <body>
+        <div class="page page__grid">
+            <header class="header">
+                <div class="header__burger">
+                    <svg class="header__icon">
+                        <use href="../assets/images/icons-sprite.svg#burger">
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="header__top">
+                        <a href="../index.html" class="header__logo">
+                            <svg class="header__svg header__svg_square">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-left">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-center">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-rigth">
+                            </svg>
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li><a href="" class="header__link">Components</a>
+                                <li><a href="" class="header__link">About</a></li>
+                                <li><a href="" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <div class="main__grid">
+                        <aside class="sidebar">
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Atoms</h2>
+                                <a href="./tooltip.html" class="sidebar__link">Tooltip</a>
+                                <a href="./avatar.html" class="sidebar__link">Avatar</a>
+                                <a href="./button.html" class="sidebar__link">Button</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Molecules</h2>
+                                <a href="./custom-form-elements.html" class="sidebar__link">Custom form elements</a>
+                                <a href="./calendar.html" class="sidebar__link">Calendar</a>
+                                <a href="./skeleton.html" class="sidebar__link">Skeleton</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Organisms</h2>
+                                <a href="./modal.html" class="sidebar__link">Modal</a>
+                                <a href="./histogram.html" class="sidebar__link">Histogram</a>
+                                <a href="./accordion.html" class="sidebar__link">Accordion</a>
+                            </div>
+                        </aside>
+                        <section class="content">
+                            <div class="content__title">Custom form elements</div>
+                            <div class="content__component">
+                                <div class="main__custom-form-elements">
+                                    <div class="main__checkbox">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__title">Default</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__title">Default</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" disabled class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                </div>
+                                                <div class="checkbox__title">Default</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="main__radio">
+                                        <label class="radio">
+                                            <input type="radio" name="radio-name" class="radio__input">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="radio__title">Default</div>
+                                            </div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="radio-name" checked class="radio__input">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="radio__title">Selected</div>
+                                            </div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="radio-name" disabled class="radio__input">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                </div>
+                                                <div class="radio__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="main__toggle">
+                                        <label class="toggle">
+                                            <input type="checkbox" class="toggle__input">
+                                            <div class="toggle__state">
+                                                <div class="toggle__control">
+                                                    <div class="toggle__wrapper">
+                                                        <svg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="12" fill="white"/>
+                                                        </svg> 
+                                                    </div>                       
+                                                </div>
+                                                <div class="toggle__title">Off</div>
+                                            </div>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="checkbox" checked class="toggle__input">
+                                            <div class="toggle__state">
+                                                <div class="toggle__control">
+                                                    <div class="toggle__wrapper">
+                                                        <svg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="12" fill="white"/>
+                                                        </svg>        
+                                                    </div>                  
+                                                </div>
+                                                <div class="toggle__title">On</div>
+                                            </div>
+                                        </label>
+                                        <label class="toggle">
+                                            <input type="checkbox" disabled class="toggle__input">
+                                            <div class="toggle__state">
+                                                <div class="toggle__control">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect opacity="0.25" width="24" height="24" rx="12" fill="#ACB5BD"/>
+                                                    </svg>                        
+                                                </div>
+                                                <div class="toggle__title">Disabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="main__entry-field">
+                                        <div class="entry-field">
+                                            <label for="" class="entry-field__label">Label</label>
+                                            <input type="text" class="entry-field__input" placeholder="Placeholder">
+                                        </div>
+                                        <div class="entry-field entry-field_success">
+                                            <label for="" class="entry-field__label">Success</label>
+                                            <div class="entry-field__wrapper">
+                                                <input type="text" class="entry-field__input" placeholder="Placeholder">
+                                                <svg class="entry-field__icon entry-field__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="entry-field entry-field_invalid">
+                                            <label for="" class="entry-field__label">Error</label>
+                                            <div class="entry-field__wrapper">
+                                                <input type="text" class="entry-field__input" placeholder="Placeholder">
+                                                <svg class="entry-field__icon entry-field__icon_invalid" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="tabs">
+                                <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
+                                <input class="tabs__input" type="radio" name="radio" id="css-tab">
+                            
+                                <div class="tabs__menu">
+                                    <div class="container">
+                                        <div class="tabs__scroller">
+                                            <label class="tabs__label tabs__label_left tabs__label_uppercase" for="html-tab">Html</label>
+                                            <label class="tabs__label tabs__label_rigth tabs__label_uppercase" for="css-tab">Css</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__line"></div>
+
+                                <div class="tabs__code tabs__code_html">
+                                    <p class="tabs__text">Checkbox</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltlabel class="checkbox"&gt
+    &ltinput type="checkbox" class="checkbox__input"&gt
+    &ltdiv class="checkbox__state"&gt
+        &ltdiv class="checkbox__control"&gt
+            &ltsvg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltpath d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/&gt
+            &lt/svg&gt
+        &lt/div&gt
+        &ltdiv class="checkbox__title"&gtDefault&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="checkbox"&gt
+    &ltinput type="checkbox" checked class="checkbox__input"&gt
+    &ltdiv class="checkbox__state"&gt
+        &ltdiv class="checkbox__control"&gt
+            &ltsvg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltpath d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/&gt
+            &lt/svg&gt
+        &lt/div&gt
+        &ltdiv class="checkbox__title"&gtDefault&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="checkbox"&gt
+    &ltinput type="checkbox" disabled class="checkbox__input"&gt
+    &ltdiv class="checkbox__state"&gt
+        &ltdiv class="checkbox__control"&gt
+        &lt/div&gt
+        &ltdiv class="checkbox__title"&gtDefault&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Radio</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltlabel class="radio"&gt
+    &ltinput type="radio" name="radio-name" class="radio__input"&gt
+    &ltdiv class="radio__state"&gt
+        &ltdiv class="radio__control"&gt
+            &ltsvg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltrect width="18" height="18" rx="9" fill="#4263EB"/&gt
+            &lt/svg&gt
+        &lt/div&gt
+        &ltdiv class="radio__title"&gtDefault&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="radio"&gt
+    &ltinput type="radio" name="radio-name" checked class="radio__input"&gt
+    &ltdiv class="radio__state"&gt
+        &ltdiv class="radio__control"&gt
+            &ltsvg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltrect width="18" height="18" rx="9" fill="#4263EB"/&gt
+            &lt/svg&gt
+        &lt/div&gt
+        &ltdiv class="radio__title"&gtSelected&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="radio"&gt
+    &ltinput type="radio" name="radio-name" disabled class="radio__input"&gt
+    &ltdiv class="radio__state"&gt
+        &ltdiv class="radio__control"&gt
+        &lt/div&gt
+        &ltdiv class="radio__title"&gtDisabled&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Toggle</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltlabel class="toggle"&gt
+    &ltinput type="checkbox" class="toggle__input"&gt
+    &ltdiv class="toggle__state"&gt
+        &ltdiv class="toggle__control"&gt
+            &ltdiv class="toggle__wrapper"&gt
+                &ltsvg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                    &ltrect width="24" height="24" rx="12" fill="white"/&gt
+                &lt/svg&gt 
+            &lt/div&gt                       
+        &lt/div&gt
+        &ltdiv class="toggle__title"&gtOff&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="toggle"&gt
+    &ltinput type="checkbox" checked class="toggle__input"&gt
+    &ltdiv class="toggle__state"&gt
+        &ltdiv class="toggle__control"&gt
+            &ltdiv class="toggle__wrapper"&gt
+                &ltsvg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                    &ltrect width="24" height="24" rx="12" fill="white"/&gt
+                &lt/svg&gt        
+            &lt/div&gt                  
+        &lt/div&gt
+        &ltdiv class="toggle__title"&gtOn&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+&ltlabel class="toggle"&gt
+    &ltinput type="checkbox" disabled class="toggle__input"&gt
+    &ltdiv class="toggle__state"&gt
+        &ltdiv class="toggle__control"&gt
+            &ltsvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltrect opacity="0.25" width="24" height="24" rx="12" fill="#ACB5BD"/&gt
+            &lt/svg&gt                        
+        &lt/div&gt
+        &ltdiv class="toggle__title"&gtDisabled&lt/div&gt
+    &lt/div&gt
+&lt/label&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Entry field</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltdiv class="entry-field"&gt
+    &ltlabel for="" class="entry-field__label"&gtLabel&lt/label&gt
+    &ltinput type="text" class="entry-field__input" placeholder="Placeholder"&gt
+&lt/div&gt
+&ltdiv class="entry-field entry-field_success"&gt
+    &ltlabel for="" class="entry-field__label"&gtSuccess&lt/label&gt
+    &ltdiv class="entry-field__wrapper"&gt
+        &ltinput type="text" class="entry-field__input" placeholder="Placeholder"&gt
+        &ltsvg class="entry-field__icon entry-field__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+            &ltpath d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt
+            &ltpath d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt
+        &lt/svg&gt
+    &lt/div&gt
+&lt/div&gt
+&ltdiv class="entry-field entry-field_invalid"&gt
+    &ltlabel for="" class="entry-field__label"&gtError&lt/label&gt
+    &ltdiv class="entry-field__wrapper"&gt
+        &ltinput type="text" class="entry-field__input" placeholder="Placeholder"&gt
+        &ltsvg class="entry-field__icon entry-field__icon_invalid" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"&gt
+            &ltpath d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt
+            &ltpath d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt
+            &ltpath d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt
+        &lt/svg&gt
+    &lt/div&gt
+&lt/div&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                                <div class="tabs__code tabs__code_css">
+                                    <p class="tabs__text">Checkbox</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.checkbox {
+    display: inline-flex;
+    position: relative;
+}
+.checkbox__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateY(-100vh);
+}
+.checkbox__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.checkbox__control {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__control{
+    animation: square 0.5s;
+}
+@keyframes square {
+    0%{
+        box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100%{
+        box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+    }
+}
+
+.checkbox__icon {
+}
+.checkbox__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+}
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+    text-decoration: underline;
+}
+
+.checkbox__input:disabled ~ .checkbox__state {
+    pointer-events: none;
+}
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+    background: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+    color: var(--grey-2);
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Radio</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.radio {
+    display: inline-flex;
+    position: relative;
+}
+.radio__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateX(-100vw);
+}
+.radio__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.radio__control {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio__icon {
+}
+.radio__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+    border: 2px solid var(--blue-2);
+    box-sizing: border-box;
+    border-color: var(--blue-2);
+}
+.radio__input:not(:checked) ~ .radio__state .radio__control .radio__icon {
+    width: 0;
+    height: 0;
+}
+.radio__input:focus ~ .radio__state .radio__title {
+    text-decoration: underline;
+}
+
+.radio__input:disabled ~ .radio__state {
+    pointer-events: none;
+}
+.radio__input:disabled ~ .radio__state .radio__control {
+    background: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__title {
+    color: var(--grey-2);
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Toggle</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.toggle {
+    display: inline-flex;
+    position: relative;
+}
+.toggle__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateX(-100vw);
+}
+.toggle__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.toggle__control {
+    width: 52px;
+    height: 28px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+.toggle__icon {
+}
+.toggle__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.toggle__wrapper{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    transition: background-color 0.5s ease;
+}
+.toggle__input:not(:checked) ~ .toggle__state .toggle__control .toggle__icon {
+    width: 0;
+    height: 0;
+}
+.toggle__input:checked ~ .toggle__state .toggle__control {
+    justify-content: flex-end;
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__title {
+    text-decoration: underline;
+}
+
+.toggle__input:disabled ~ .toggle__state {
+    pointer-events: none;
+}
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+    background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title {
+    color: var(--grey-2);
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p class="tabs__text">Entry field</p>
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.entry-field{
+}
+.entry-field__input {
+    width: 350px;
+    height: 56px;
+    padding: 0 50px 0 24px;
+    box-sizing: border-box;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    transition: border 0.2s linear;
+}
+.entry-field__label {
+    margin-bottom: 5px;
+    display: block;
+    color: var(--Gray-3, #ACB5BD);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+.entry-field__icon{
+    position: absolute;
+    opacity: 0;
+    top: 16px;
+    right: 16px;
+}
+.entry-field__wrapper{
+    position: relative;
+    max-width: 350px;
+}
+.entry-field__input::placeholder {
+    color: var(--grey-2);
+}
+
+.entry-field__input:focus{
+    border: 1px solid var(--light-blue);
+    outline: none;
+}
+
+.entry-field_success .entry-field__icon_success {
+    opacity: 1;
+}
+.entry-field_success .entry-field__input {
+    border: 1px solid var(--grey-2);
+    outline: none;
+}
+.entry-field_invalid .entry-field__icon_invalid {
+    opacity: 1;
+}
+.entry-field_invalid .entry-field__input {
+    border: 1px solid var(--red);
+    outline: none;
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <p class="footer__text footer__text_short">
+                        Reusable component library
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

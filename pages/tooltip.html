@@ -60,8 +60,17 @@
                             </div>
                         </aside>
                         <section class="content">
-                            <div class="content__title"></div>
-                            <div class="content__component"></div>
+                            <div class="content__title">Tooltip</div>
+                            <div class="content__component">
+                                <div class="tooltip main__tooltip">
+                                    <div class="tooltip__trigger">
+                                        <svg class="tooltip__svg">
+                                            <use href="../../assets/images/icons-sprite.svg#question">
+                                        </svg>
+                                    </div>
+                                    <div class="tooltip__bubble">Helper Text</div>
+                                </div>
+                            </div>
                             <div class="tabs">
                                 <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
                                 <input class="tabs__input" type="radio" name="radio" id="css-tab">
@@ -69,8 +78,8 @@
                                 <div class="tabs__menu">
                                     <div class="container">
                                         <div class="tabs__scroller">
-                                            <label class="tabs__label tabs__label_1 tabs__label_uppercase" for="html-tab">Html</label>
-                                            <label class="tabs__label tabs__label_2 tabs__label_uppercase" for="css-tab">Css</label>
+                                            <label class="tabs__label tabs__label_left tabs__label_uppercase" for="html-tab">Html</label>
+                                            <label class="tabs__label tabs__label_rigth tabs__label_uppercase" for="css-tab">Css</label>
                                         </div>
                                     </div>
                                 </div>
@@ -80,14 +89,66 @@
                                 <div class="tabs__code tabs__code_html">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>html</code>
+                                            <code>
+&ltdiv class="tooltip"&gt
+    &ltdiv class="tooltip__trigger"&gt
+        &ltsvg class="tooltip__svg"&gt
+            &ltuse href="../../assets/images/icons-sprite.svg#question"&gt
+        &lt/svg&gt
+    &lt/div&gt
+    &ltdiv class="tooltip__bubble"&gtHelper Text&lt/div&gt
+&lt/div&gt
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
                                 <div class="tabs__code tabs__code_css">
                                     <figure>
                                         <pre class="tabs__code-text">
-                                            <code>css</code>
+                                            <code>
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tooltip__trigger {
+    cursor: pointer;
+}
+.tooltip__svg{
+    width: 24px;
+    height: 24px;
+}
+.tooltip__bubble {
+    display: none;
+    width: 129px;
+    position: absolute;
+    padding: 13px 0 8px;
+    border-radius: 10px;
+    background: #4263EB;
+    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    color: var(--grey-2);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip__bubble:after{
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #4263EB;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip__trigger:hover ~ .tooltip__bubble{
+    display: block;
+}
+                                            </code>
                                         </pre>
                                     </figure>
                                 </div>
