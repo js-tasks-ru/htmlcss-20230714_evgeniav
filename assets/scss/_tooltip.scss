@@ -43,9 +43,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
-        & .tooltip__bubble{
-            display: block;
-        }
+    }
+    &_visible &__bubble{
+        display: block;
     }
 }

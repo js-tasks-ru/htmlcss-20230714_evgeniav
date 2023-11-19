@@ -40,17 +40,17 @@
         max-width: 350px;
     }
     
-    &_success .entry-field__icon_success {
+    &_success &__icon_success {
         opacity: 1;
     }
-    &_success .entry-field__input {
+    &_success &__input {
         border: 1px solid $grey-2;
         outline: none;
     }
-    &_invalid .entry-field__icon_invalid {
+    &_invalid &__icon_invalid {
         opacity: 1;
     }
-    &_invalid .entry-field__input {
+    &_invalid &__input {
         border: 1px solid $red;
         outline: none;
     }

@@ -9,17 +9,16 @@
     &_preview{
         padding: 5%;
         max-width: 200px;
+    }
+    &_preview &__title {
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+    &_preview &__item {
+        font-size: 9px;
 
-        & .calendar__title {
-            font-size: 14px;
-            margin-bottom: 2%;
-        }
-        & .calendar__item {
+        &_day {
             font-size: 9px;
-
-            &_day {
-                font-size: 9px;
-            }
         }
     }
     &__title {

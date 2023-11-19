@@ -1,19 +1,14 @@
 .accordion {
 
-    &_preview{
-        
-        & .accordion__item{
-            pointer-events: none;
-        }
-        & .accordion__item {
-            padding: 5%;
-        }
-        & .accordion__summary {
-            font-size: 14px;
-        }
-        & .accordion__text {
-            font-size: 12px;
-        }
+    &_preview &__item{
+        pointer-events: none;
+        padding: 5%;
+    }
+    &_preview &__summary {
+        font-size: 14px;
+    }
+    &_preview &__text {
+        font-size: 12px;
     }
 
     &__item{
