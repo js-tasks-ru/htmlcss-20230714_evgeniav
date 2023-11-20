@@ -5,103 +5,104 @@
         width: 0;
         height: 0;
         transform: translateY(-100vh);
-
-        &#html-tab:checked ~ .tabs__menu .tabs__label_1::after{
-            transform: scaleX(1);
-        }
-        &#html-tab:hover ~ .tabs__menu .tabs__label_1::after{
-            transform: scaleX(1);
-        }
-        &#html-tab:checked ~ .tabs__menu .tabs__label_1{
-            color: $black;
-        }
-        &#html-tab:hover ~ .tabs__menu .tabs__label_1{
-            color: $black;
-        }
-        &#html-tab:checked ~ .tabs__code_html{
-            display: block;
-        }
-
-        &#css-tab:checked ~ .tabs__menu .tabs__label_2::after{
-            transform: scaleX(1);
-        }
-        &#css-tab:hover ~ .tabs__menu .tabs__label_2::after{
-            transform: scaleX(1);
-        }
-        &#css-tab:checked ~ .tabs__menu .tabs__label_2{
-            color: $black;
-        }
-        &#css-tab:hover ~ .tabs__menu .tabs__label_2{
-            color: $black;
-        }
-        &#css-tab:checked ~ .tabs__code_css{
-            display: block;
-        }
-
-        &#all-tab:checked ~ .tabs__menu .tabs__label_1::after{
-            transform: scaleX(1);
-        }
-        &#all-tab:hover ~ .tabs__menu .tabs__label_1::after{
-            transform: scaleX(1);
-        }
-        &#all-tab:checked ~ .tabs__menu .tabs__label_1{
-            color: $black;
-        }
-        &#all-tab:hover ~ .tabs__menu .tabs__label_1{
-            color: $black;
-        }
-        &#all-tab:checked ~ .tabs__content_all{
-            display: block;
-        }
-    
-        &#atoms-tab:checked ~ .tabs__menu .tabs__label_2::after{
-            transform: scaleX(1);
-        }
-        &#atoms-tab:hover ~ .tabs__menu .tabs__label_2::after{
-            transform: scaleX(1);
-        }
-        &#atoms-tab:checked ~ .tabs__menu .tabs__label_2{
-            color: $black;
-        }
-        &#atoms-tab:hover ~ .tabs__menu .tabs__label_2{
-            color: $black;
-        }
-        &#atoms-tab:checked ~ .tabs__content_atoms{
-            display: block;
-        }
-    
-        &#molecules-tab:checked ~ .tabs__menu .tabs__label_3::after{
-            transform: scaleX(1);
-        }
-        &#molecules-tab:hover ~ .tabs__menu .tabs__label_3::after{
-            transform: scaleX(1);
-        }
-        &#molecules-tab:checked ~ .tabs__menu .tabs__label_3{
-            color: $black;
-        }
-        &#molecules-tab:hover ~ .tabs__menu .tabs__label_3{
-            color: $black;
-        }
-        &#molecules-tab:checked ~ .tabs__content_molecules{
-            display: block;
-        }
-
-        &#organisms-tab:checked ~ .tabs__menu .tabs__label_4::after{
-            transform: scaleX(1);
-        }
-        &#organisms-tab:hover ~ .tabs__menu .tabs__label_4::after{
-            transform: scaleX(1);
-        }
-        &#organisms-tab:checked ~ .tabs__menu .tabs__label_4{
-            color: $black;
-        }
-        &#organisms-tab:hover ~ .tabs__menu .tabs__label_4{
-            color: $black;
-        }
-        &#organisms-tab:checked ~ .tabs__content_organisms{
-            display: block;
-        }
     }
+    
+    &__input#html-tab:checked ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#html-tab:hover ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#html-tab:checked ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#html-tab:hover ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#html-tab:checked ~ &__code_html{
+        display: block;
+    }
+
+    &__input#css-tab:checked ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#css-tab:hover ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#css-tab:checked ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#css-tab:hover ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#css-tab:checked ~ &__code_css{
+        display: block;
+    }
+
+    &__input#all-tab:checked ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#all-tab:hover ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#all-tab:checked ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#all-tab:hover ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#all-tab:checked ~ &__content_all{
+        display: block;
+    }
+
+    &__input#atoms-tab:checked ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#atoms-tab:hover ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#atoms-tab:checked ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#atoms-tab:hover ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#atoms-tab:checked ~ &__content_atoms{
+        display: block;
+    }
+
+    &__input#molecules-tab:checked ~ &__menu &__label_3::after{
+        transform: scaleX(1);
+    }
+    &__input#molecules-tab:hover ~ &__menu &__label_3::after{
+        transform: scaleX(1);
+    }
+    &__input#molecules-tab:checked ~ &__menu &__label_3{
+        color: $black;
+    }
+    &__input#molecules-tab:hover ~ &__menu &__label_3{
+        color: $black;
+    }
+    &__input#molecules-tab:checked ~ &__content_molecules{
+        display: block;
+    }
+
+    &__input#organisms-tab:checked ~ &__menu &__label_4::after{
+        transform: scaleX(1);
+    }
+    &__input#organisms-tab:hover ~ &__menu &__label_4::after{
+        transform: scaleX(1);
+    }
+    &__input#organisms-tab:checked ~ &__menu &__label_4{
+        color: $black;
+    }
+    &__input#organisms-tab:hover ~ &__menu &__label_4{
+        color: $black;
+    }
+    &__input#organisms-tab:checked ~ &__content_organisms{
+        display: block;
+    }
+
     &__scroller {
         display: flex;
         gap: 40px;

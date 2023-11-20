@@ -4,10 +4,9 @@
 
     &__trigger {
         cursor: pointer;
-
-        &:hover ~ .tooltip__bubble{
-            display: block;
-        }
+    }
+    &__trigger:hover ~ &__bubble{
+        display: block;
     }
     &__svg{
         @include size(24px, 24px);
