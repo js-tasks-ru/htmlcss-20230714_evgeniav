@@ -6,32 +6,28 @@
         position: absolute;
         @include size(0, 0);
         transform: translateX(-100vw);
-
-        
-        &:not(:checked) ~ .toggle__state .toggle__control .toggle__icon {
-            @include size(0, 0);
-        }
-        &:checked ~ .toggle__state .toggle__control {
-            justify-content: flex-end;
-            background: $blue-2;
-            border-color: $blue-2;
-        }
-
-        &:focus ~ .toggle__state .toggle__title {
-            text-decoration: underline;
-        }
-
-        &:disabled ~ .toggle__state {
-            pointer-events: none;
-            
-            & .toggle__control {
-                background: $grey-2;
-            }
-            & .toggle__title {
-                color: $grey-2;
-            }
-        }
     }
+    &__input:not(:checked) ~ &__state &__control &__icon {
+        @include size(0, 0);
+    }
+    &__input:checked ~ &__state &__control {
+        justify-content: flex-end;
+        background: $blue-2;
+        border-color: $blue-2;
+    }
+    &__input:focus ~ &__state &__title {
+        text-decoration: underline;
+    }
+    &__input:disabled ~ &__state {
+        pointer-events: none;
+    }
+    &__input:disabled ~ &__state &__control {
+        background: $grey-2;
+    }
+    &__input:disabled ~ &__state &__title {
+        color: $grey-2;
+    }
+
     &__state {
         display: flex;
         align-items: center;

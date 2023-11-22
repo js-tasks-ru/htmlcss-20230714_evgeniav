@@ -6,6 +6,21 @@
     border: 1px solid $grey-3;
     border-radius: 8px;
 
+    &_preview{
+        padding: 5%;
+        max-width: 200px;
+    }
+    &_preview &__title {
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+    &_preview &__item {
+        font-size: 9px;
+
+        &_day {
+            font-size: 9px;
+        }
+    }
     &__title {
         margin-bottom: 24px;
         display: flex;

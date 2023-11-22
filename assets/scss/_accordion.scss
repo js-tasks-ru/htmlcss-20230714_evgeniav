@@ -1,4 +1,16 @@
 .accordion {
+
+    &_preview &__item{
+        pointer-events: none;
+        padding: 5%;
+    }
+    &_preview &__summary {
+        font-size: 14px;
+    }
+    &_preview &__text {
+        font-size: 12px;
+    }
+
     &__item{
         position: relative;
         margin: 0 0 8px;
@@ -9,10 +21,9 @@
         &:last-child{
             margin: 0;
         }
-        
-        &[open] .accordion__svg {
-            transform: rotate(180deg);
-        }
+    }
+    &__item[open] &__svg {
+        transform: rotate(180deg);
     }
     &__summary {
         display: flex;
