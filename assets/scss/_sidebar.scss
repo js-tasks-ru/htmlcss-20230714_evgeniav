@@ -1,0 +1,22 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    
+    @media (max-width: 375px) {
+        display: none;
+    }
+
+    &__item {
+        display: grid;
+        row-gap: 8px;
+    }
+    &__title {
+        margin-bottom: 12px;
+    }
+    &__link {
+        font-family: 'Inter';
+        @include text(400, 14px, 22px);
+        color: #212429;
+    }
+}

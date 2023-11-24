@@ -1,0 +1,57 @@
+.entry-field{
+    
+    &__input {
+        @include size(350px, 56px);
+        padding: 0 50px 0 24px;
+        box-sizing: border-box;
+        background: $white;
+        border: 1px solid $grey-2;
+        border-radius: 8px;
+        font-family: Inter;
+        @include text(400, 20px, 26px);
+        transition: border 0.2s linear;
+
+        &::placeholder {
+            color: $grey-2;
+        }
+        
+        &:focus{
+            border: 1px solid $light-blue;
+            outline: none;
+        }
+    }
+    &__label {
+        margin-bottom: 5px;
+        display: block;
+        color: $grey-3;
+        font-family: Inter;
+        @include text(500, 12px, 18px);
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+    }
+    &__icon{
+        position: absolute;
+        opacity: 0;
+        top: 16px;
+        right: 16px;
+    }
+    &__wrapper{
+        position: relative;
+        max-width: 350px;
+    }
+    
+    &_success &__icon_success {
+        opacity: 1;
+    }
+    &_success &__input {
+        border: 1px solid $grey-2;
+        outline: none;
+    }
+    &_invalid &__icon_invalid {
+        opacity: 1;
+    }
+    &_invalid &__input {
+        border: 1px solid $red;
+        outline: none;
+    }
+}

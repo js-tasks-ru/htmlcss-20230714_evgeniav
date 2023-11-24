@@ -1,0 +1,94 @@
+.burger-menu{
+    @media (min-width: 375px){
+        display: none;
+    }
+    
+    @media (max-width: 375px){
+        background-color: #F9FAFC;
+        position: fixed;
+        top: 0;
+        left: 0;
+        @include size(100%, 100%);
+        transform: translateX(-100vw);
+        transition: transform 250ms linear;
+    }
+
+    &__svg {
+        @media (max-width: 375px){
+            @include size(32px, 32px);
+        }
+    }
+    &__close{
+        @media (max-width: 375px){
+            @include size(32px, 32px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            background-color: $grey-2;
+            border-radius: 50%;
+        }
+    }
+    &__svg{
+        @media (max-width: 375px){
+            @include size(24px, 24px);
+        }
+    }
+    &__logo{
+        @media (max-width: 375px){
+            margin: 16px 0 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            height: 34px;
+        }
+    }
+    &[data-open]{
+        @media (max-width: 375px){
+            transform: translateX(0);
+        }
+    }
+    &__navigation{
+        @media (max-width: 375px){
+            margin: 0 16px;
+        }
+    }
+    &__title {
+        @media (max-width: 375px){
+            margin-bottom: 16px;
+            color: $grey-3;
+            font-family: Inter;
+            @include text(400, 20px, 26px);   
+        }
+    }
+    &__list{
+        @media (max-width: 375px){
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__link {
+        @media (max-width: 375px){
+            color: $black;
+            font-family: Inter;
+            @include text(400, 16px, 24px);
+        }
+
+        &:visited{
+            @media (max-width: 375px){
+                color: $red-2;            
+            }
+        }
+    }
+    &__li{
+        &:last-child {
+            @media (max-width: 375px){
+                margin-top: 56px;
+            }
+        }
+    }
+}

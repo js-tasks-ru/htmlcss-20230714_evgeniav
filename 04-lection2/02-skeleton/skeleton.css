@@ -31,6 +31,19 @@
 .skeleton__line{
     height: 20px;
     background: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, var(--grey-2) 102.52%);
+    background-size: 200%;
+    animation-name: gradient;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: -100%;
+    }
 }
 .skeleton__bottom{
     display: grid;

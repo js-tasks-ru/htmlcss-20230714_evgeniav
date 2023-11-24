@@ -1,0 +1,62 @@
+.toggle {
+    display: inline-flex;
+    position: relative;
+    
+    &__input {
+        position: absolute;
+        @include size(0, 0);
+        transform: translateX(-100vw);
+    }
+    &__input:not(:checked) ~ &__state &__control &__icon {
+        @include size(0, 0);
+    }
+    &__input:checked ~ &__state &__control {
+        justify-content: flex-end;
+        background: $blue-2;
+        border-color: $blue-2;
+    }
+    &__input:focus ~ &__state &__title {
+        text-decoration: underline;
+    }
+    &__input:disabled ~ &__state {
+        pointer-events: none;
+    }
+    &__input:disabled ~ &__state &__control {
+        background: $grey-2;
+    }
+    &__input:disabled ~ &__state &__title {
+        color: $grey-2;
+    }
+
+    &__state {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+    &__control {
+	    @include size(52px, 28px);
+        padding: 2px;
+        box-sizing: border-box;
+        border: 1px solid $grey-2;
+        border-radius: 16px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.5s ease, border 0.5s ease;
+    }
+    &__icon {
+    }
+    &__title {
+        font-family: Inter;
+        @include text(400, 16px, 24px);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__wrapper{
+	    @include size(24px, 24px);
+        border-radius: 50%;
+        background-color: $grey-2;
+        transition: background-color 0.5s ease;
+    }
+}

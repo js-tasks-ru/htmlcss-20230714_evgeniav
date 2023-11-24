@@ -1,0 +1,63 @@
+.modal{
+    position: fixed;
+    display: none;
+    @include size(100%, 100%);
+    background: rgba(196, 196, 196, 0.5);
+
+    &_open {
+        display: block;
+        position: static;
+        max-width: 280px;
+    }
+    &_preview {
+        max-height: 220px;
+    }
+    &_preview &__window {
+        max-width: 180px;
+        padding: 5%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &_preview &__title {
+        font-size: 15px;
+    }
+    &_preview &__text {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    &__window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $white;
+        padding: 30px 40px 33px;
+        border-radius: 8px;
+    }
+    &__title {
+        margin-bottom: 14px;
+        @include text(600, 20px, 24px);
+        color: #334D6E;
+    }
+    &__text {
+        box-sizing: border-box;
+        width: 348px;
+        padding-right: 10px;
+        @include text(400, 16px, 24px);
+        color: $grey-4;
+    }
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @include size(20px, 20px);
+        cursor: pointer;
+    }
+    &__svg{
+        position: absolute;
+        @include size(20px, 20px);
+    }
+}

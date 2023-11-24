@@ -24,6 +24,18 @@
     justify-content: center;
     align-items: center;
 }
+.checkbox__input:checked ~ .checkbox__state .checkbox__control{
+    animation: square 0.5s;
+}
+@keyframes square {
+    0%{
+        box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100%{
+        box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+    }
+}
+
 .checkbox__icon {
 }
 .checkbox__title {

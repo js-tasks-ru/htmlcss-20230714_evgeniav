@@ -2,25 +2,743 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="./assets/css/normalize.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./build/index.css">
+        <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
     </head>
     <body>
         <div class="page">
+            <div class="burger-menu" id="burger-menu">
+                <button class="burger-menu__close" id="burger-menu-close">
+                    <svg class="burger-menu__svg burger-menu__svg_smaller-size">
+                        <use href="../../assets/images/icons-sprite.svg#cross">
+                    </svg>
+                </button>            
+                <div class="burger-menu__logo">
+                    <svg class="burger-menu__svg burger-menu__svg_square">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-left">
+                    </svg>
+                    <svg class="burger-menu__svg">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-center">
+                    </svg>
+                    <svg class="burger-menu__svg">
+                        <use href="../../assets/images/icons-sprite.svg#header-icon-rigth">
+                    </svg>
+                </div>
+                <nav class="burger-menu__navigation">
+                    <h2 class="burger-menu__title">Component</h2>
+                    <ul class="burger-menu__list">
+                        <li><a href="" class="burger-menu__link">Modal</a></li>
+                        <li><a href="" class="burger-menu__link">Tooltip</a></li>
+                        <li><a href="" class="burger-menu__link">Avatar</a></li>
+                        <li><a href="" class="burger-menu__link">Calendar</a></li>
+                        <li><a href="" class="burger-menu__link">Histogram</a></li>
+                        <li><a href="" class="burger-menu__link">Custom form elements</a></li>
+                        <li class="burger-menu__li"><a href="" class="burger-menu__link">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
             <header class="header">
+                <button class="header__toggle-burger-menu" id="burger-menu-open">
+                    <svg class="header__svg">
+                        <use href="../../assets/images/icons-sprite.svg#burger">
+                    </svg>
+                </button>
                 <div class="container">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <svg class="header__svg header__svg_square">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-left">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-center">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="./assets/images/icons-sprite.svg#header-icon-rigth">
+                            </svg>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li><a href="" class="header__link">Components</a>
+                                <li><a href="" class="header__link">About</a></li>
+                                <li><a href="" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
-            <main class="preview page__main">
-                <div class="container">
-                    <div class="preview__cards">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
+            <main class="page__main">
+                <div class="tabs">
+                    <input class="tabs__input" type="radio" name="radio" id="all-tab" checked>
+                    <input class="tabs__input" type="radio" name="radio" id="atoms-tab">
+                    <input class="tabs__input" type="radio" name="radio" id="molecules-tab">
+                    <input class="tabs__input" type="radio" name="radio" id="organisms-tab">
+                
+                    <div class="tabs__menu">
+                        <div class="container">
+                            <div class="tabs__scroller">
+                                <label class="tabs__label tabs__label_1 tabs__label_reset" for="all-tab">All components</label>
+                                <label class="tabs__label tabs__label_2" for="atoms-tab">Atoms</label>
+                                <label class="tabs__label tabs__label_3" for="molecules-tab">Molecules</label>
+                                <label class="tabs__label tabs__label_4" for="organisms-tab">Organisms</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs__line"></div>
+                    
+                    <div class="tabs__content tabs__content_all">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <a href="./pages/tooltip.html" class="card">
+                                        <div class="card__element">
+                                            <div class="tooltip tooltip_visible">
+                                                <div class="tooltip__trigger">
+                                                    <svg class="tooltip__svg">
+                                                        <use href="../../assets/images/icons-sprite.svg#question">
+                                                    </svg>
+                                                </div>
+                                                <div class="tooltip__bubble">Helper Text</div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Tooltip</p>
+                                            <p class="card__text">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/custom-form-elements.html" class="card">
+                                        <div class="card__element">
+                                            <div class="card__row">
+                                                <div class="card__column">
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" checked class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" disabled class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="card__column">
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="radio__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" checked class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="radio__title">Selected</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" disabled class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                            </div>
+                                                            <div class="radio__title">Disabled</div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Custom form elements</p>
+                                            <p class="card__text">Molecules</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/calendar.html" class="card">
+                                        <div class="card__element">
+                                            <div class="calendar calendar_preview">
+                                                <div class="calendar__title">October 2019</div>
+                                                <div class="calendar__wrapper">
+                                                    <div class="calendar__inner">
+                                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item">1</span>
+                                                        <span class="calendar__item">2</span>
+                                                        <span class="calendar__item">3</span>
+                                                        <span class="calendar__item">4</span>
+                                                        <span class="calendar__item">5</span>
+                                                        <span class="calendar__item">6</span>
+                                                        <span class="calendar__item">7</span>
+                                                        <span class="calendar__item">8</span>
+                                                        <span class="calendar__item">9</span>
+                                                        <span class="calendar__item">10</span>
+                                                        <span class="calendar__item">11</span>
+                                                        <span class="calendar__item">12</span>
+                                                        <span class="calendar__item">13</span>
+                                                        <span class="calendar__item">14</span>
+                                                        <span class="calendar__item">15</span>
+                                                        <span class="calendar__item">16</span>
+                                                        <span class="calendar__item">17</span>
+                                                        <span class="calendar__item calendar__item_selected">18</span>
+                                                        <span class="calendar__item calendar__item_dedicated">19</span>
+                                                        <span class="calendar__item calendar__item_dedicated">20</span>
+                                                        <span class="calendar__item calendar__item_dedicated">21</span>
+                                                        <span class="calendar__item calendar__item_dedicated">22</span>
+                                                        <span class="calendar__item calendar__item_selected">23</span>
+                                                        <span class="calendar__item">24</span>
+                                                        <span class="calendar__item">25</span>
+                                                        <span class="calendar__item">26</span>
+                                                        <span class="calendar__item">27</span>
+                                                        <span class="calendar__item">28</span>
+                                                        <span class="calendar__item">29</span>
+                                                        <span class="calendar__item">30</span>
+                                                        <span class="calendar__item">31</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Calendar</p>
+                                            <p class="card__text">Molecule</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/modal.html" class="card">
+                                        <div class="card__element">
+                                            <div id="modal" class="modal modal_open modal_preview">
+                                                <div class="modal__window">
+                                                    <h2 class="modal__title">Modal title</h2>
+                                                    <p class="modal__text">
+                                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Modal</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/histogram.html" class="card">
+                                        <div class="card__element">
+                                            <div class="histogram histogram_preview">
+                                                <div class="histogram__header">
+                                                    <div class="histogram__titles">
+                                                        <h2 class="histogram__title">Total orders</h2>
+                                                        <p class="histogram__orders">50254</p>
+                                                    </div>
+                                                </div>
+                                                <div class="histogram__bottom">
+                                                    <div class="histogram__chart">
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_medium"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Histogram</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/avatar.html" class="card">
+                                        <div class="card__element">
+                                            <div class="avatar avatar_preview">
+                                                <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="" class="avatar__img">
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Avatar</p>
+                                            <p class="card__text">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/skeleton.html" class="card">
+                                        <div class="card__element">
+                                            <div class="skeleton skeleton_preview">
+                                                <div class="skeleton__top">
+                                                    <div class="skeleton__avatar"></div>
+                                                    <div class="skeleton__column">
+                                                        <div class="skeleton__line skeleton__column_small"></div>
+                                                        <div class="skeleton__line skeleton__column_large"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skeleton__bottom">
+                                                    <div class="skeleton__line"></div>
+                                                    <div class="skeleton__line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Skeleton</p>
+                                            <p class="card__text">Molecules</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/button.html" class="card">
+                                        <div class="card__element">
+                                            <div class="card__column">
+                                                <button class="button button_primary button_preview">Primary</button>
+                                                <button class="button button_primary button_preview" disabled>Primary</button>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Button</p>
+                                            <p class="card__text">Atoms</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/accordion.html" class="card">
+                                        <div class="card__element">
+                                            <div class="accordion accordion_preview">
+                                                <details class="accordion__item" open>
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 1
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint.
+                                                    </p>
+                                                </details>
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 2
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint. Velit officia consequat 
+                                                        duis enim velit mollit. Exercitation veniam consequat 
+                                                        sunt nostrud amet.
+                                                    </p>
+                                                </details>
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 3
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint. Velit officia consequat 
+                                                        duis enim velit mollit. Exercitation veniam consequat 
+                                                        sunt nostrud amet.
+                                                    </p>
+                                                </details>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Accordion</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="tabs__content tabs__content_atoms">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <a href="./pages/tooltip.html" class="card">
+                                        <div class="card__element">
+                                            <div class="tooltip tooltip_visible">
+                                                <div class="tooltip__trigger">
+                                                    <svg class="tooltip__svg">
+                                                        <use href="../../assets/images/icons-sprite.svg#question">
+                                                    </svg>
+                                                </div>
+                                                <div class="tooltip__bubble">Helper Text</div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Tooltip</p>
+                                            <p class="card__text">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/avatar.html" class="card">
+                                        <div class="card__element">
+                                            <div class="avatar avatar_preview">
+                                                <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="" class="avatar__img">
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Avatar</p>
+                                            <p class="card__text">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/button.html" class="card">
+                                        <div class="card__element">
+                                            <div class="card__column">
+                                                <button class="button button_primary button_preview">Primary</button>
+                                                <button class="button button_primary button_preview" disabled>Primary</button>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Button</p>
+                                            <p class="card__text">Atoms</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_molecules">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <a href="./pages/custom-form-elements.html" class="card">
+                                        <div class="card__element">
+                                            <div class="card__row">
+                                                <div class="card__column">
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" checked class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview">
+                                                        <input type="checkbox" disabled class="checkbox__input">
+                                                        <div class="checkbox__state">
+                                                            <div class="checkbox__control">
+                                                            </div>
+                                                            <div class="checkbox__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="card__column">
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="radio__title">Default</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" checked class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                                <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="radio__title">Selected</div>
+                                                        </div>
+                                                    </label>
+                                                    <label class="radio radio_preview">
+                                                        <input type="radio" name="radio-name" disabled class="radio__input">
+                                                        <div class="radio__state">
+                                                            <div class="radio__control">
+                                                            </div>
+                                                            <div class="radio__title">Disabled</div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Custom form elements</p>
+                                            <p class="card__text">Molecules</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/calendar.html" class="card">
+                                        <div class="card__element">
+                                            <div class="calendar calendar_smaller-size">
+                                                <div class="calendar__title">October 2019</div>
+                                                <div class="calendar__wrapper">
+                                                    <div class="calendar__inner">
+                                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item"></span>
+                                                        <span class="calendar__item">1</span>
+                                                        <span class="calendar__item">2</span>
+                                                        <span class="calendar__item">3</span>
+                                                        <span class="calendar__item">4</span>
+                                                        <span class="calendar__item">5</span>
+                                                        <span class="calendar__item">6</span>
+                                                        <span class="calendar__item">7</span>
+                                                        <span class="calendar__item">8</span>
+                                                        <span class="calendar__item">9</span>
+                                                        <span class="calendar__item">10</span>
+                                                        <span class="calendar__item">11</span>
+                                                        <span class="calendar__item">12</span>
+                                                        <span class="calendar__item">13</span>
+                                                        <span class="calendar__item">14</span>
+                                                        <span class="calendar__item">15</span>
+                                                        <span class="calendar__item">16</span>
+                                                        <span class="calendar__item">17</span>
+                                                        <span class="calendar__item calendar__item_selected">18</span>
+                                                        <span class="calendar__item calendar__item_dedicated">19</span>
+                                                        <span class="calendar__item calendar__item_dedicated">20</span>
+                                                        <span class="calendar__item calendar__item_dedicated">21</span>
+                                                        <span class="calendar__item calendar__item_dedicated">22</span>
+                                                        <span class="calendar__item calendar__item_selected">23</span>
+                                                        <span class="calendar__item">24</span>
+                                                        <span class="calendar__item">25</span>
+                                                        <span class="calendar__item">26</span>
+                                                        <span class="calendar__item">27</span>
+                                                        <span class="calendar__item">28</span>
+                                                        <span class="calendar__item">29</span>
+                                                        <span class="calendar__item">30</span>
+                                                        <span class="calendar__item">31</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Calendar</p>
+                                            <p class="card__text">Molecule</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/skeleton.html" class="card">
+                                        <div class="card__element">
+                                            <div class="skeleton skeleton_preview">
+                                                <div class="skeleton__top">
+                                                    <div class="skeleton__avatar"></div>
+                                                    <div class="skeleton__column">
+                                                        <div class="skeleton__line skeleton__column_small"></div>
+                                                        <div class="skeleton__line skeleton__column_large"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skeleton__bottom">
+                                                    <div class="skeleton__line"></div>
+                                                    <div class="skeleton__line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Skeleton</p>
+                                            <p class="card__text">Molecules</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_organisms">
+                        <div class="preview">
+                            <div class="container">
+                                <div class="preview__cards">
+                                    <a href="./pages/modal.html" class="card">
+                                        <div class="card__element">
+                                            <div id="modal" class="modal modal_open modal_preview">
+                                                <div class="modal__window">
+                                                    <h2 class="modal__title">Modal title</h2>
+                                                    <p class="modal__text">
+                                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                    </p>
+                                                    <div id="modal-close" class="modal__close">
+                                                        <svg class="modal__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#cross">
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Modal</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/histogram.html" class="card">
+                                        <div class="card__element">
+                                            <div class="histogram histogram_preview">
+                                                <div class="histogram__header">
+                                                    <div class="histogram__titles">
+                                                        <h2 class="histogram__title">Total orders</h2>
+                                                        <p class="histogram__orders">50254</p>
+                                                    </div>
+                                                </div>
+                                                <div class="histogram__bottom">
+                                                    <div class="histogram__chart">
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_medium"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_large"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_small-medium"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                        <div class="histogram__column histogram__column_medium-large"></div>
+                                                        <div class="histogram__column histogram__column_small"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Histogram</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a href="./pages/accordion.html" class="card">
+                                        <div class="card__element">
+                                            <div class="accordion accordion_preview">
+                                                <details class="accordion__item" open>
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 1
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint.
+                                                    </p>
+                                                    
+                                                </details>
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 2
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint. Velit officia consequat 
+                                                        duis enim velit mollit. Exercitation veniam consequat 
+                                                        sunt nostrud amet.
+                                                    </p>
+                                                </details>
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        Accordion item 3
+                                                        <svg class="accordion__svg">
+                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        </svg>
+                                                    </summary>
+                                                    <p class="accordion__text">
+                                                        Amet minim mollit non deserunt ullamco est sit 
+                                                        aliqua dolor do amet sint. Velit officia consequat 
+                                                        duis enim velit mollit. Exercitation veniam consequat 
+                                                        sunt nostrud amet.
+                                                    </p>
+                                                </details>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <p class="card__name">Accordion</p>
+                                            <p class="card__text">Organism</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

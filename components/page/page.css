@@ -6,3 +6,20 @@
 .page__main{
     flex-grow: 1;
 }
+.page__line{
+    height: 1px;
+    background: var(--grey-2);
+}
+
+.page__grid{
+    display: grid;
+    gap: 56px;
+    grid-template-rows: 50px 1fr 100px;
+    background-color: var(--grey-5);
+}
+@media (max-width: 375px) {
+    .page__grid{
+        gap: 0;
+        grid-template-rows: 64px 1fr;
+    }
+}

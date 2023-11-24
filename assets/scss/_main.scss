@@ -1,0 +1,84 @@
+.main {
+    flex-grow: 1;
+
+    &__grid{
+        display: grid;
+        gap: 56px;
+        grid-template-columns: 170px 1fr;
+        grid-template-rows: 1fr;
+
+        @media (max-width: 375px) {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 375px) {
+        background-color: var(--white);
+    }
+
+    &__tooltip {
+        margin: 58px 0 0 53px;
+    }
+
+    &__custom-form-elements{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    &__checkbox{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__radio{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__toggle{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__entry-field{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__calendar {
+        max-width: 240px;
+    }
+
+    &__modal {
+        top: 0;
+        left: 0;
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        & button{
+            max-width: 200px;
+            width: 100%;
+        }
+    }
+    &__button-primary{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__button-secondary{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__button-altermate{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

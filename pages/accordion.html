@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- Страница компонента-->
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../build/index.css">
+    </head>
+    <body>
+        <div class="page page__grid">
+            <header class="header">
+                <div class="header__burger">
+                    <svg class="header__icon">
+                        <use href="../assets/images/icons-sprite.svg#burger">
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="header__top">
+                        <a href="../index.html" class="header__logo">
+                            <svg class="header__svg header__svg_square">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-left">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-center">
+                            </svg>
+                            <svg class="header__svg">
+                                <use href="../assets/images/icons-sprite.svg#header-icon-rigth">
+                            </svg>
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li><a href="" class="header__link">Components</a>
+                                <li><a href="" class="header__link">About</a></li>
+                                <li><a href="" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <div class="main__grid">
+                        <aside class="sidebar">
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Atoms</h2>
+                                <a href="./tooltip.html" class="sidebar__link">Tooltip</a>
+                                <a href="./avatar.html" class="sidebar__link">Avatar</a>
+                                <a href="./button.html" class="sidebar__link">Button</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Molecules</h2>
+                                <a href="./custom-form-elements.html" class="sidebar__link">Custom form elements</a>
+                                <a href="./calendar.html" class="sidebar__link">Calendar</a>
+                                <a href="./skeleton.html" class="sidebar__link">Skeleton</a>
+                            </div>
+                            <div class="sidebar__item">
+                                <h2 class="sidebar__title">Organisms</h2>
+                                <a href="./modal.html" class="sidebar__link">Modal</a>
+                                <a href="./histogram.html" class="sidebar__link">Histogram</a>
+                                <a href="./accordion.html" class="sidebar__link">Accordion</a>
+                            </div>
+                        </aside>
+                        <section class="content">
+                            <div class="content__title">Accordion</div>
+                            <div class="content__component">
+                                <div class="accordion">
+                                    <details class="accordion__item" open>
+                                        <summary class="accordion__summary">
+                                            Accordion item 1
+                                            <svg class="accordion__svg">
+                                                <use href="../../assets/images/icons-sprite.svg#arrow">
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit 
+                                            aliqua dolor do amet sint. Velit officia consequat 
+                                            duis enim velit mollit. Exercitation veniam consequat 
+                                            sunt nostrud amet.
+                                        </p>
+                                        
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 2
+                                            <svg class="accordion__svg">
+                                                <use href="../../assets/images/icons-sprite.svg#arrow">
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit 
+                                            aliqua dolor do amet sint. Velit officia consequat 
+                                            duis enim velit mollit. Exercitation veniam consequat 
+                                            sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 3
+                                            <svg class="accordion__svg">
+                                                <use href="../../assets/images/icons-sprite.svg#arrow">
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit 
+                                            aliqua dolor do amet sint. Velit officia consequat 
+                                            duis enim velit mollit. Exercitation veniam consequat 
+                                            sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <input class="tabs__input" type="radio" name="radio" id="html-tab" checked>
+                                <input class="tabs__input" type="radio" name="radio" id="css-tab">
+                            
+                                <div class="tabs__menu">
+                                    <div class="container">
+                                        <div class="tabs__scroller">
+                                            <label class="tabs__label tabs__label_left tabs__label_uppercase" for="html-tab">Html</label>
+                                            <label class="tabs__label tabs__label_rigth tabs__label_uppercase" for="css-tab">Css</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__line"></div>
+
+                                <div class="tabs__code tabs__code_html">
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+&ltdiv class="accordion"&gt
+    &ltdetails class="accordion__item" open&gt
+        &ltsummary class="accordion__summary"&gt
+            Accordion item 1
+            &ltsvg class="accordion__svg"&gt
+                &ltuse href="../../assets/images/icons-sprite.svg#arrow"&gt
+            &lt/svg&gt
+        &lt/summary&gt
+        &ltp class="accordion__text"&gt
+            Amet minim mollit non deserunt ullamco est sit 
+            aliqua dolor do amet sint. Velit officia consequat 
+            duis enim velit mollit. Exercitation veniam consequat 
+            sunt nostrud amet.
+        &lt/p&gt
+        
+    &lt/details&gt
+    &ltdetails class="accordion__item"&gt
+        &ltsummary class="accordion__summary"&gt
+            Accordion item 2
+            &ltsvg class="accordion__svg"&gt
+                &ltuse href="../../assets/images/icons-sprite.svg#arrow"&gt
+            &lt/svg&gt
+        &lt/summary&gt
+        &ltp class="accordion__text"&gt
+            Amet minim mollit non deserunt ullamco est sit 
+            aliqua dolor do amet sint. Velit officia consequat 
+            duis enim velit mollit. Exercitation veniam consequat 
+            sunt nostrud amet.
+        &lt/p&gt
+    &lt/details&gt
+    &ltdetails class="accordion__item"&gt
+        &ltsummary class="accordion__summary"&gt
+            Accordion item 3
+            &ltsvg class="accordion__svg"&gt
+                &ltuse href="../../assets/images/icons-sprite.svg#arrow"&gt
+            &lt/svg&gt
+        &lt/summary&gt
+        &ltp class="accordion__text"&gt
+            Amet minim mollit non deserunt ullamco est sit 
+            aliqua dolor do amet sint. Velit officia consequat 
+            duis enim velit mollit. Exercitation veniam consequat 
+            sunt nostrud amet.
+        &lt/p&gt
+    &lt/details&gt
+&lt/div&gt
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                                <div class="tabs__code tabs__code_css">
+                                    <figure>
+                                        <pre class="tabs__code-text">
+                                            <code>
+.accordion {
+}
+.accordion__item{
+    position: relative;
+    margin: 0 0 8px;
+    padding: 24px 32px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+}
+.accordion__item:last-child{
+    margin: 0;
+}
+.accordion__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+.accordion__summary::marker {
+    content: "";
+}
+.accordion__text {
+    padding: 16px 0 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+.accordion__svg {
+    width: 18px;
+    height: 10px;
+}
+.accordion__item[open] .accordion__svg {
+    transform: rotate(180deg);
+}
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <p class="footer__text footer__text_short">
+                        Reusable component library
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

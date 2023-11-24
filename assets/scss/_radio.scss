@@ -1,0 +1,61 @@
+.radio {
+    display: inline-flex;
+    position: relative;
+    
+    &_preview {
+        pointer-events: none;
+    }
+
+    &__input {
+        position: absolute;
+        @include size(0, 0);
+        transform: translateX(-100vw);
+
+        &:checked ~ .radio__state .radio__control {
+            border: 2px solid $blue-2;
+            box-sizing: border-box;
+            border-color: $blue-2;
+        }
+        &:not(:checked) ~ .radio__state .radio__control .radio__icon {
+            @include size(0, 0);
+        }
+        &:focus ~ .radio__state .radio__title {
+            text-decoration: underline;
+        }
+        
+        &:disabled ~ .radio__state {
+            pointer-events: none;
+            
+            & .radio__control {
+                background: $grey-2;
+            }
+            
+            & .radio__title {
+                color: $grey-2;
+            }
+        }
+    }
+    &__state {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+    &__control {
+        @include size(28px, 28px);
+        border: 1px solid $grey-2;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+    }
+    &__title {
+        font-family: Inter;        
+        @include text(400, 16px, 24px);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}

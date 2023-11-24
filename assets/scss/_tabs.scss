@@ -1,0 +1,179 @@
+.tabs {
+    
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        transform: translateY(-100vh);
+    }
+    
+    &__input#html-tab:checked ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#html-tab:hover ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#html-tab:checked ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#html-tab:hover ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#html-tab:checked ~ &__code_html{
+        display: block;
+    }
+
+    &__input#css-tab:checked ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#css-tab:hover ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#css-tab:checked ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#css-tab:hover ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#css-tab:checked ~ &__code_css{
+        display: block;
+    }
+
+    &__input#all-tab:checked ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#all-tab:hover ~ &__menu &__label_1::after{
+        transform: scaleX(1);
+    }
+    &__input#all-tab:checked ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#all-tab:hover ~ &__menu &__label_1{
+        color: $black;
+    }
+    &__input#all-tab:checked ~ &__content_all{
+        display: block;
+    }
+
+    &__input#atoms-tab:checked ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#atoms-tab:hover ~ &__menu &__label_2::after{
+        transform: scaleX(1);
+    }
+    &__input#atoms-tab:checked ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#atoms-tab:hover ~ &__menu &__label_2{
+        color: $black;
+    }
+    &__input#atoms-tab:checked ~ &__content_atoms{
+        display: block;
+    }
+
+    &__input#molecules-tab:checked ~ &__menu &__label_3::after{
+        transform: scaleX(1);
+    }
+    &__input#molecules-tab:hover ~ &__menu &__label_3::after{
+        transform: scaleX(1);
+    }
+    &__input#molecules-tab:checked ~ &__menu &__label_3{
+        color: $black;
+    }
+    &__input#molecules-tab:hover ~ &__menu &__label_3{
+        color: $black;
+    }
+    &__input#molecules-tab:checked ~ &__content_molecules{
+        display: block;
+    }
+
+    &__input#organisms-tab:checked ~ &__menu &__label_4::after{
+        transform: scaleX(1);
+    }
+    &__input#organisms-tab:hover ~ &__menu &__label_4::after{
+        transform: scaleX(1);
+    }
+    &__input#organisms-tab:checked ~ &__menu &__label_4{
+        color: $black;
+    }
+    &__input#organisms-tab:hover ~ &__menu &__label_4{
+        color: $black;
+    }
+    &__input#organisms-tab:checked ~ &__content_organisms{
+        display: block;
+    }
+
+    &__scroller {
+        display: flex;
+        gap: 40px;
+    }
+    &__label{
+        position: relative;
+        height: 37px;
+        cursor: pointer;
+        color: $grey-3;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        transition: color 250ms;
+
+        &_1{
+            margin-left: 33px;
+        }
+        &_reset{
+            margin-left: 0;
+        }
+        &_uppercase{
+            text-transform: uppercase;
+        }
+        &::after{   
+            content: ''; 
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-color: $black;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
+    }
+
+    &__line {
+        height: 1px;
+        background-color: $grey-2;
+    }
+    &__code {
+        margin: 0 15px 0 42px;
+        display: none;
+        overflow-x: auto;
+    }
+    &__code-text{
+        display: flex;
+    }
+
+    &__content {
+        margin: 0;
+        padding: 67px 0 92px;
+        display: none;
+        width: 100%;
+        background-color: #F9FAFC;
+
+        @media (max-width: 375px) {
+            padding: 21px 0;
+        }
+    }
+
+    &__menu{
+        @media (max-width: 375px) {
+            margin-left: 16px;
+        }
+    }
+    &__text {
+        color: $black;        
+        font-family: Inter;
+        @include text(400, 22px, 24px);
+    }
+}

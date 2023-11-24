@@ -6,6 +6,11 @@
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/section/section.css';
+@import '../../components/main/main.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/burger-menu/burger-menu.css';
 
 :root {
     --white: #ffffff;
@@ -18,10 +23,12 @@
     --blue-2: #4263EB;
     --light-blue: #4263EB;
     --red: #F03D3E;
+    --red-2: #D84910;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -34,4 +41,4 @@
     font-family: 'Inter' ,'Roboto', sans-serif;
 }
 
-html, body{min-height: 100%;}
+html, body{min-height: 100vh;}

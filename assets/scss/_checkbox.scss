@@ -1,0 +1,67 @@
+.checkbox {
+    display: inline-flex;
+    position: relative;
+    
+    &_preview {
+        pointer-events: none;
+    }
+    &__input {
+        position: absolute;
+        @include size(0, 0);
+        transform: translateY(-100vh);
+        
+        &:checked ~ .checkbox__state .checkbox__control{
+            animation: square 0.5s;
+            background: $blue-2;
+            border-color: $blue-2;
+        }
+    
+        &:focus ~ .checkbox__state .checkbox__title {
+            text-decoration: underline;
+        }
+    
+        &:disabled ~ .checkbox__state {
+            pointer-events: none;
+
+            .checkbox__control {
+                background: $grey-2;
+            }
+            .checkbox__title {
+                color: $grey-2;
+            }
+        }
+    
+    }
+    &__state {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+    &__control {
+        @include size(28px, 28px);
+        border: 1px solid $grey-2;
+        border-radius: 4px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes square {
+        0%{
+            box-shadow: 0 0 0 0 #bdc3c7;
+        }
+        100%{
+            box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+        }
+    }
+
+    &__icon {
+    }
+    &__title {
+        font-family: Inter;
+        @include text(400, 16px, 24px);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
