@@ -15,12 +15,15 @@
         gap: 8px;
         height: 34px;
     }
-    &__svg {
+    &__icon {
         @include size(32px, 32px);
         
         &_square{
             width: 30px;
         }
+    }
+    &__svg{
+        fill: $svg-bg;
     }
     &__menu {
         @media (max-width: 375px) {

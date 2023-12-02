@@ -41,7 +41,10 @@
         @include text(400, 16px, 24px);
         color: $grey-4;
     }
-    &__svg {
+    &__icon {
         @include size(18px, 10px);
+    }
+    &__svg{
+        fill: $svg-bg;
     }
 }
