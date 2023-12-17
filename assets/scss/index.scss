@@ -14,6 +14,7 @@ $grey-2: #DDE2E5;
 $grey-3: #ACB5BD;
 $grey-4: #495057;
 $grey-5: #F9FAFC;
+$grey-6: #90A0B7;
 
 $error: $red;
 $success: $blue;
@@ -22,7 +23,19 @@ $primary: $blue;
 $secondary: $purple;
 
 $main-bg: $white;
+$basic-bg: $grey-5;
+$alternate-bg: $basic-bg;
+$primary-font-color: $black;
+$secondary-bg: $black;
 $svg-bg: $black;
+$main-font-color: $black;
+$secondary-basic-bg: $grey-3;
+$secondary-active-bg: $grey-2;
+$alternate-font-color: $black-2;
+$secondary-font-color: $grey-6;
+$active-font-color: $red-2;
+$main-font-color-text: $grey-4;
+$secondary-font-color-text: $grey-3;
 
 @mixin text($fw: false, $fsz: false, $lh: false){
     @if ($fw){
@@ -79,192 +92,15 @@ html[data-theme-dark]{
     $secondary-bg: $grey-1;
     $secondary-basic-bg: $grey-3;
     $secondary-active-bg: $grey-2;
+    $alternate-bg: transparent;
     $main-font-color: #ffffff75;
     $primary-font-color: $secondary-active-bg;
     $active-font-color: $red-2;
     $secondary-font-color: $grey-3;
+    $alternate-font-color: $main-font-color;
+    $main-font-color-text: $main-font-color;
+    $secondary-font-color-text: $main-font-color;
     $svg-bg: $secondary-bg;
-
-    .card{
-        background-color: $main-bg;
-        &__name{
-            color: $main-font-color;
-        }
-        &__text{
-            color: $main-font-color;
-        }
-    }
-    .header{
-        background-color: $main-bg;
-
-        &__title{
-            color: $main-font-color;
-        }
-        &__svg{
-            fill: $svg-bg;
-        }
-    }
-    .tabs{
-        &__input#html-tab:checked ~ .tabs__menu .tabs__label_1{
-            color: $primary-font-color;
-        }
-        &__input#html-tab:hover ~ .tabs__menu .tabs__label_1{
-            color: $primary-font-color;
-        }
-        &__input#css-tab:checked ~ .tabs__menu .tabs__label_2{
-            color: $primary-font-color;
-        }
-        &__input#css-tab:hover ~ .tabs__menu .tabs__label_2{
-            color: $primary-font-color;
-        }
-        &__input#all-tab:checked ~ .tabs__menu .tabs__label_1{
-            color: $primary-font-color;
-        }
-        &__input#all-tab:hover ~ .tabs__menu .tabs__label_1{
-            color: $primary-font-color;
-        }
-        &__input#atoms-tab:checked ~ .tabs__menu .tabs__label_2{
-            color: $primary-font-color;
-        }
-        &__input#atoms-tab:hover ~ .tabs__menu .tabs__label_2{
-            color: $primary-font-color;
-        }
-        &__input#molecules-tab:checked ~ .tabs__menu .tabs__label_3{
-            color: $primary-font-color;
-        }
-        &__input#molecules-tab:hover ~ .tabs__menu .tabs__label_3{
-            color: $primary-font-color;
-        }
-        &__input#organisms-tab:checked ~ .tabs__menu .tabs__label_4{
-            color: $primary-font-color;
-        }
-        &__input#organisms-tab:hover ~ .tabs__menu .tabs__label_4{
-            color: $primary-font-color;
-        }
-        &__menu{
-            background-color: $main-bg;
-        }
-        &__label{
-            color: $main-font-color;
-        }
-        &__label::after{
-            background-color: $secondary-bg;
-        }
-        &__line{
-            background-color: $secondary-bg;
-        }
-        &__content{
-            background-color: $basic-bg;
-        }
-        &__code-text{
-            color: $main-font-color;
-        }
-    }
-    .preview{
-        background-color: $basic-bg;
-    }
-    .histogram{
-        background-color: $main-bg;
-
-        &__title{
-            color: $main-font-color;
-        }
-        &__orders{
-            color: $main-font-color;
-        }
-    }
-    .calendar{
-        background-color: $main-bg;
-
-        &__title{
-            color: $main-font-color;
-        }
-        &__item{
-            color: $main-font-color;
-
-            &_day{
-                color: $secondary-font-color;
-            }
-        }
-    }
-    .modal{
-        &__window{
-            background-color: $main-bg;
-        }
-        &__title{
-            color: $main-font-color;
-        }
-        &__text{
-            color: $main-font-color;
-        }
-    }
-    .accordion{
-        background-color: $main-bg;
-
-        &__summary{
-            color: $main-font-color;
-        }
-        &__text{
-            color: $main-font-color;
-        }
-        &__svg{
-            fill: $svg-bg;
-        }
-    }
-    .skeleton{
-        background-color: $main-bg;
-    }
-    .footer{
-        background-color: $main-bg;
-
-        &__subtitle{
-            color: $main-font-color;
-        }
-        &__text{
-            color: $main-font-color;
-        }
-    }
-    .page{
-        &__grid{
-            background-color: $basic-bg;
-            & .header{
-                background-color: transparent;
-            }
-        }
-    }
-    .main{
-        &__grid{
-            background-color: $basic-bg;
-        }
-    }
-    .content{
-        background-color: $main-bg;        
-    }
-    .sidebar{
-        &__title{
-            color: $main-font-color;
-        }
-        &__link{
-            color: $main-font-color;
-            &:visited{
-                color: $active-font-color;
-            }
-        }
-    }
-    .burger-menu{
-        background-color: $main-bg;
-        &__title{
-            color: $main-font-color;
-        }
-        &__link{
-            color: $main-font-color;
-        }
-        &__svg{
-            @media (max-width: 375px){
-                fill: $svg-bg;            
-            }
-        }
-    }
 }
 
 * {

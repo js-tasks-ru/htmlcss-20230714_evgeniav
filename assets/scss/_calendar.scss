@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 300px;
     padding: 28px 26px 32px;
-    background: $white;
+    background: $main-bg;
     border: 1px solid $grey-3;
     border-radius: 8px;
 
@@ -27,7 +27,7 @@
         justify-content: center;
         font-family: 'Inter';
         @include text(600, 20px, 24px);
-        color: #334D6E;
+        color: $alternate-font-color;
     }
     &__wrapper {
         padding-bottom: 100%;
@@ -49,12 +49,12 @@
         align-items: center;
         font-family: 'Source Sans Pro';
         @include text(400, 16px, 20px);
-        color: $black-2;
+        color: $alternate-font-color;
         
         &_day {
             font-family: 'Inter';
             @include text(400, 14px, 20px);
-            color: #90A0B7;
+            color: $secondary-font-color;
         }
         &_dedicated {
             background-color: rgba(160, 177, 245, 0.2);

@@ -1,7 +1,7 @@
 .histogram {
     padding: 16px 24px 24px 26px;
     box-sizing: border-box;
-    background-color: $white;
+    background-color: $main-bg;
     border: 1px solid $grey-3;
     border-radius: 8px;
 
@@ -16,12 +16,12 @@
     &__title {
         margin-bottom: 6px;
         @include text(400, 16px, 24px);
-        color: $black;
+        color: $main-font-color;
         opacity: 0.8;
     }
     &__orders {
         @include text(400, 20px, 26px);
-        color: $black;
+        color: $main-font-color;
     }
     &__link {
         display: inline-block;

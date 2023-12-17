@@ -13,10 +13,15 @@
     }
     &__title {
         margin-bottom: 12px;
+        color: $main-font-color;
     }
     &__link {
         font-family: 'Inter';
         @include text(400, 14px, 22px);
-        color: #212429;
+        color: $main-font-color;
+        
+        &:visited{
+            color: $active-font-color;
+        }
     }
 }
