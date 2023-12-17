@@ -33,21 +33,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: $white;
+        background-color: $main-bg;
         padding: 30px 40px 33px;
         border-radius: 8px;
     }
     &__title {
         margin-bottom: 14px;
         @include text(600, 20px, 24px);
-        color: #334D6E;
+        color: $alternate-font-color;
     }
     &__text {
         box-sizing: border-box;
         width: 348px;
         padding-right: 10px;
         @include text(400, 16px, 24px);
-        color: $grey-4;
+        color: $main-font-color-text;
     }
     &__close {
         position: absolute;

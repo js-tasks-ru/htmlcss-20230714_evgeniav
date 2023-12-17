@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./build/index.css">
         <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
+        <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
     <body>
         <div class="page">
             <div class="burger-menu" id="burger-menu">
                 <button class="burger-menu__close" id="burger-menu-close">
-                    <svg class="burger-menu__svg burger-menu__svg_smaller-size">
+                    <svg class="burger-menu__icon burger-menu__icon_smaller-size">
                         <use href="../../assets/images/icons-sprite.svg#cross">
                     </svg>
                 </button>            
                 <div class="burger-menu__logo">
-                    <svg class="burger-menu__svg burger-menu__svg_square">
-                        <use href="../../assets/images/icons-sprite.svg#header-icon-left">
+                    <svg class="burger-menu__icon burger-menu__icon_square">
+                        <use class="burger-menu__svg" href="../../assets/images/icons-sprite.svg#header-icon-left">
                     </svg>
-                    <svg class="burger-menu__svg">
-                        <use href="../../assets/images/icons-sprite.svg#header-icon-center">
+                    <svg class="burger-menu__icon">
+                        <use class="burger-menu__svg" href="../../assets/images/icons-sprite.svg#header-icon-center">
                     </svg>
-                    <svg class="burger-menu__svg">
-                        <use href="../../assets/images/icons-sprite.svg#header-icon-rigth">
+                    <svg class="burger-menu__icon">
+                        <use class="burger-menu__svg" href="../../assets/images/icons-sprite.svg#header-icon-rigth">
                     </svg>
                 </div>
                 <nav class="burger-menu__navigation">
@@ -47,23 +48,34 @@
                 <div class="container">
                     <div class="header__top">
                         <div class="header__logo">
-                            <svg class="header__svg header__svg_square">
-                                <use href="./assets/images/icons-sprite.svg#header-icon-left">
+                            <svg class="header__icon header__icon_square">
+                                <use class="header__svg" href="./assets/images/icons-sprite.svg#header-icon-left">
                             </svg>
-                            <svg class="header__svg">
-                                <use href="./assets/images/icons-sprite.svg#header-icon-center">
+                            <svg class="header__icon">
+                                <use class="header__svg" href="./assets/images/icons-sprite.svg#header-icon-center">
                             </svg>
-                            <svg class="header__svg">
-                                <use href="./assets/images/icons-sprite.svg#header-icon-rigth">
+                            <svg class="header__icon">
+                                <use class="header__svg" href="./assets/images/icons-sprite.svg#header-icon-rigth">
                             </svg>
                         </div>
-                        <nav class="header__menu">
-                            <ul class="header__menu-list">
-                                <li><a href="" class="header__link">Components</a>
-                                <li><a href="" class="header__link">About</a></li>
-                                <li><a href="" class="header__link">Contact</a></li>
-                            </ul>
-                        </nav>
+                        <label class="toggle">
+                            <input type="checkbox" id="theme-changer" class="toggle__input">
+                            <div class="toggle__state">
+                                <svg class="toggle__icon">
+                                    <use class="toggle__svg" href="../../assets/images/icons-sprite.svg#light">
+                                </svg>
+                                <div class="toggle__control">
+                                    <div class="toggle__wrapper">
+                                        <svg class="toggle__icon">
+                                            <use href="../../assets/images/icons-sprite.svg#toggle">
+                                        </svg> 
+                                    </div>                       
+                                </div>
+                                <svg class="toggle__icon">
+                                    <use class="toggle__svg" href="../../assets/images/icons-sprite.svg#dark">
+                                </svg>
+                            </div>
+                        </label>
                     </div>
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
@@ -355,8 +367,8 @@
                                                 <details class="accordion__item" open>
                                                     <summary class="accordion__summary">
                                                         Accordion item 1
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">
@@ -367,8 +379,8 @@
                                                 <details class="accordion__item">
                                                     <summary class="accordion__summary">
                                                         Accordion item 2
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">
@@ -381,8 +393,8 @@
                                                 <details class="accordion__item">
                                                     <summary class="accordion__summary">
                                                         Accordion item 3
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">
@@ -691,8 +703,8 @@
                                                 <details class="accordion__item" open>
                                                     <summary class="accordion__summary">
                                                         Accordion item 1
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">
@@ -704,8 +716,8 @@
                                                 <details class="accordion__item">
                                                     <summary class="accordion__summary">
                                                         Accordion item 2
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">
@@ -718,8 +730,8 @@
                                                 <details class="accordion__item">
                                                     <summary class="accordion__summary">
                                                         Accordion item 3
-                                                        <svg class="accordion__svg">
-                                                            <use href="../../assets/images/icons-sprite.svg#arrow">
+                                                        <svg class="accordion__icon">
+                                                            <use class="accordion__svg" href="../../assets/images/icons-sprite.svg#arrow">
                                                         </svg>
                                                     </summary>
                                                     <p class="accordion__text">

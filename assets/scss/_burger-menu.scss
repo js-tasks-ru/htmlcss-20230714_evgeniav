@@ -1,4 +1,6 @@
 .burger-menu{
+    background-color: $main-bg;
+
     @media (min-width: 375px){
         display: none;
     }
@@ -13,7 +15,7 @@
         transition: transform 250ms linear;
     }
 
-    &__svg {
+    &__icon {
         @media (max-width: 375px){
             @include size(32px, 32px);
         }
@@ -31,7 +33,7 @@
             border-radius: 50%;
         }
     }
-    &__svg{
+    &__icon{
         @media (max-width: 375px){
             @include size(24px, 24px);
         }
@@ -57,14 +59,16 @@
         }
     }
     &__title {
+        color: $main-font-color;
         @media (max-width: 375px){
             margin-bottom: 16px;
-            color: $grey-3;
+            color: $secondary-basic-bg;
             font-family: Inter;
             @include text(400, 20px, 26px);   
         }
     }
     &__list{
+        color: $main-font-color;
         @media (max-width: 375px){
             display: flex;
             flex-direction: column;
@@ -73,14 +77,14 @@
     }
     &__link {
         @media (max-width: 375px){
-            color: $black;
+            color: $main-font-color;
             font-family: Inter;
             @include text(400, 16px, 24px);
         }
 
         &:visited{
             @media (max-width: 375px){
-                color: $red-2;            
+                color: $active-font-color;            
             }
         }
     }
@@ -89,6 +93,11 @@
             @media (max-width: 375px){
                 margin-top: 56px;
             }
+        }
+    }
+    &__svg{
+        @media (max-width: 375px){
+            fill: $svg-bg;            
         }
     }
 }

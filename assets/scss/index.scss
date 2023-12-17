@@ -14,12 +14,28 @@ $grey-2: #DDE2E5;
 $grey-3: #ACB5BD;
 $grey-4: #495057;
 $grey-5: #F9FAFC;
+$grey-6: #90A0B7;
 
 $error: $red;
 $success: $blue;
 
 $primary: $blue;
 $secondary: $purple;
+
+$main-bg: $white;
+$basic-bg: $grey-5;
+$alternate-bg: $basic-bg;
+$primary-font-color: $black;
+$secondary-bg: $black;
+$svg-bg: $black;
+$main-font-color: $black;
+$secondary-basic-bg: $grey-3;
+$secondary-active-bg: $grey-2;
+$alternate-font-color: $black-2;
+$secondary-font-color: $grey-6;
+$active-font-color: $red-2;
+$main-font-color-text: $grey-4;
+$secondary-font-color-text: $grey-3;
 
 @mixin text($fw: false, $fsz: false, $lh: false){
     @if ($fw){
@@ -69,6 +85,23 @@ $secondary: $purple;
 @import '../scss/input';
 
 
+
+html[data-theme-dark]{
+    $main-bg: $black;
+    $basic-bg: $grey-4;
+    $secondary-bg: $grey-1;
+    $secondary-basic-bg: $grey-3;
+    $secondary-active-bg: $grey-2;
+    $alternate-bg: transparent;
+    $main-font-color: #ffffff75;
+    $primary-font-color: $secondary-active-bg;
+    $active-font-color: $red-2;
+    $secondary-font-color: $grey-3;
+    $alternate-font-color: $main-font-color;
+    $main-font-color-text: $main-font-color;
+    $secondary-font-color-text: $main-font-color;
+    $svg-bg: $secondary-bg;
+}
 
 * {
     font-family: 'Inter' ,'Roboto', sans-serif;

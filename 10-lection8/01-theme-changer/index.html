@@ -2,6 +2,9 @@
 <!-- Пример использования theme-changer -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./theme-changer.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <style>
             html[data-theme-dark] {
                 background: #000;
@@ -10,6 +13,27 @@
         <script defer src="./theme-changer.js"></script>
     </head>
     <body>
-        <input type="checkbox" id="theme-changer">
+        <label class="toggle">
+            <input type="checkbox" id="theme-changer" class="toggle__input">
+            <div class="toggle__state">
+                <div class="theme-changer">
+                    <svg class="theme-changer__svg">
+                        <use href="../../assets/images/icons-sprite.svg#light">
+                    </svg>
+                </div>
+                <div class="toggle__control">
+                    <div class="toggle__wrapper">
+                        <svg class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="white"/>
+                        </svg> 
+                    </div>                       
+                </div>
+                <div class="theme-changer">
+                    <svg class="theme-changer__svg">
+                        <use href="../../assets/images/icons-sprite.svg#dark">
+                    </svg>
+                </div>
+            </div>
+        </label>
     </body>
 </html>
